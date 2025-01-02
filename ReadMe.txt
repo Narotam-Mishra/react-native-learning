@@ -44,3 +44,25 @@ Q. Why to learn React Native?
 # In the event that we require access to native Android or iOS code, Expo allows us to eject our app and work with a plain React Native codebase. This flexibility ensures that we have the option to leverage the additional functionalities provided by Expo while still retaining the ability to tap into native code when necessary.
 
 # Expo is the default choice for setting up development environment. This endorsement by the React Native community highlights Expo as the optimal starting point for beginners. It provides a smoother onboarding experience and robust set of tools to kick-start our React native journey.
+
+## Lec 3 - Hello World (5:51)
+
+# Let us create our first React Native app.
+
+# Technically it will be Expo project, creating a new `Expo` project is as simple as running a single line of code using below command :-
+`npx create-expo-app@latest project-name`
+
+# Folder structure of the React Native project :-
+
+1). `package.json` :- this file contains the project depedencies, scripts and metadata. In depedencies section, we will find essentialmpackages like - expo, react & react-native. Additionally there's a package called `Expo` status bar which controls the application's status bar. `@babel/core` is listed as a dev dependency. Regarding scripts :-
+a). `start` - start script is used to initiate the development server and there are additional scripts to specifically target Android, iOS or web platforms.
+
+2). `package-lock.json` :- this file ensures the consistent installation of project dependencies.
+
+3). `babel.config.js` :- this file serves as the babel configuration file, it applies the babel preset Expo preset etending the default react native preset. This configuration adds support for decorators pre-shaking web packages and loading font icons with optional native depedencies provided they're installed. if needed, we can modify this file to include additional Babel plugins or presets.
+
+4). `app.json` :- this an important file as it contains configuration options for the project, these options alter project's behavior during development building submitting and updating the app. Through out this learning we will learn about differnt entries in this file.
+
+5). `App.js` - this file serves as the default screen of our project. It acts as the root file that loads when we start the development server with command `npm start` (similar to that of App.jsx in react project)
+
+6). `assets` folder - this folder serves as a storage location for images, audio files and video files and other resources that need to be bundled with the application. 
