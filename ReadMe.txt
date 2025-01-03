@@ -82,3 +82,15 @@ a). `start` - start script is used to initiate the development server and there 
 4). make sure the our laptop and mobile device are connected to same Wifi network,
 5). Open the Camera app and scan the QR code displayed in the terminal (for iOS device)
 5.1). For Android device, use the `Expo Go` app to scanner to scan the terminal's QR code.
+
+## Lec 5 - Running App on iPhone Simulator (2:06)
+
+# Note - Running iOS simulator is only possible on a MAC not on a window or Linux systems.
+
+# Steps :-
+1). From terminal run the command - `npm start`
+2). download `Xcode` from app store and grant the necessary permission it requests,
+3). From terminal find shortcuts to open iOS simulator
+3.1). within a few seconds the iPhone simulator should open prompting you to open the app in `Expo Go` app, grant the necessary permission, you will be the running app.
+
+# Note - By default the iPhone SE third generation simulator is open if we prefer to use different device then we can change this from `file` section in iPhone
