@@ -65,4 +65,20 @@ a). `start` - start script is used to initiate the development server and there 
 
 5). `App.js` - this file serves as the default screen of our project. It acts as the root file that loads when we start the development server with command `npm start` (similar to that of App.jsx in react project)
 
-6). `assets` folder - this folder serves as a storage location for images, audio files and video files and other resources that need to be bundled with the application. 
+6). `assets` folder - this folder serves as a storage location for images, audio files and video files and other resources that need to be bundled with the application.
+
+## Lec 4 - Running App on Device (2:14)
+
+# Running our Expo App
+1). iOS Device
+2). Android Device
+3). iOS simulator
+4). Android simulator
+
+# Steps to run the Expo app :-
+1). navigate to the folder where we have created the project,
+2). run the command `npm start`
+3). download `Expo Go` app on our mobile device from playstore
+4). make sure the our laptop and mobile device are connected to same Wifi network,
+5). Open the Camera app and scan the QR code displayed in the terminal (for iOS device)
+5.1). For Android device, use the `Expo Go` app to scanner to scan the terminal's QR code.
