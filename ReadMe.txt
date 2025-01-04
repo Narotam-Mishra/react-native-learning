@@ -94,3 +94,17 @@ a). `start` - start script is used to initiate the development server and there 
 3.1). within a few seconds the iPhone simulator should open prompting you to open the app in `Expo Go` app, grant the necessary permission, you will be the running app.
 
 # Note - By default the iPhone SE third generation simulator is open if we prefer to use different device then we can change this from `file` section in iPhone
+
+## Lec 6 - Running App on Android Emulator (4:07)
+
+# Steps to run React Native apps on Android Emulator :-
+1). visit developer.android.com/studio and install Android studio application and done the setup,
+
+2). Open Android studio, then select `Virtual Device Manager` option from More Actions dropdown, then create a new virtual device from `Create device` option 
+
+3). select the device that we wish to test on, then click `Next`, then select the Android API level (we have install it for first time), and add name for our virtual device from `AVD Name` option, then click finish on verify configuration screen,
+
+4). run the device by clicking `play` button,
+
+5). with the Android Emulator running in the background return to VS Code and follow terminal commands to run the app on Android Emulator
+
