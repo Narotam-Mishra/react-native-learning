@@ -108,3 +108,24 @@ a). `start` - start script is used to initiate the development server and there 
 
 5). with the Android Emulator running in the background return to VS Code and follow terminal commands to run the app on Android Emulator
 
+## Lec 7 - Core Components (02:48)
+
+# When we use React to create web user interfaces, we often utilize HTML tags such as div, span, and paragraph
+
+# It is crucial to note that the web elements that we write for the web are specific to the browser's understanding of HTML. When working with react native these elements won't work because react native doesn't incorporate the concept of a document object model (DOM).
+
+# Core Components contd..
+
+# In Android and iOS app development, we employ a fundamental building block called a `view` for user interfaces. A view is a small rectangular element on the screen that can display text, images or respond to user input.
+
+# Android - views are written in Kotlin or Java,
+
+# iOS - views are written in Swift or Objective-C,
+
+# React Native - views using JavaScript through React components,
+
+# At runtime, React native generates the corresponding Android and iOS views for these components.
+
+# React Native offers a collection of essential pre-built components known as "Core components," which are readily available for building our native app's user interface.
+
+# A notable difference between creating react components for the web and react native is that in react native we need to import core components from the react native library where as in react for web development we don't import HTML elements like div, span or paragraph 
