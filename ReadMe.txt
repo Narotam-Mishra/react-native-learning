@@ -128,4 +128,13 @@ a). `start` - start script is used to initiate the development server and there 
 
 # React Native offers a collection of essential pre-built components known as "Core components," which are readily available for building our native app's user interface.
 
-# A notable difference between creating react components for the web and react native is that in react native we need to import core components from the react native library where as in react for web development we don't import HTML elements like div, span or paragraph 
+# A notable difference between creating react components for the web and react native is that in react native we need to import core components from the react native library where as in react for web development we don't import HTML elements like div, span or paragraph.
+
+## Lec 8 - View (6:50)
+
+# View :- First core component in the react native library,
+
+# The View component is a fundamental core component in React Native that serves as building block for creating user interfaces. It functions as a container that supports layout using flexbox, styling, touch handling and accessibility controls. In web development terms, the View component can be compared to the `<div>` tag. The View component is typically nested inside other views and can have zero or more children of any type. It provides the structure and organization for other components in the UI.
+
+# View component is an essential core component in react native serving as a building block for creating UIs. it acts as a container that supports layout and styling. View component can be nested as well.
+
