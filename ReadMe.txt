@@ -138,3 +138,13 @@ a). `start` - start script is used to initiate the development server and there 
 
 # View component is an essential core component in react native serving as a building block for creating UIs. it acts as a container that supports layout and styling. View component can be nested as well.
 
+## Lec 9 - Text (3:33)
+
+# Text - It is component for displaying text. It supports nesting, styling and touch handling. Depending on the target platform, React Native will translate this component to either a UITextView (iOS), a TextView (Android), or a `p` (web).
+
+# In React Native all text nodes must be wrapped inside a text component. Directly placing text under a view is not allowed..
+
+# We can also next `Text` component.
+
+# The `Text` component is essential for displaying text in react native. Every text node within a view must be wrapped with the text component.
+
