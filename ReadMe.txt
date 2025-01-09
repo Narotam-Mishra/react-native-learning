@@ -148,3 +148,23 @@ a). `start` - start script is used to initiate the development server and there 
 
 # The `Text` component is essential for displaying text in react native. Every text node within a view must be wrapped with the text component.
 
+## Lec 10 - Image (5:50)
+
+# The `Image` component enables us to display various types of images, including
+- Static images,
+- Network images,
+- Images from the local disk, such as the camera roll
+
+# React Native seamlessly translates the Image component to platform-specific counterparts
+:-
+# UIImageView fro iOS,
+# ImageView for Android,
+# `img` for the Web
+
+# Begin by rendering static image from local,
+
+# Note - we need to pass remote image path as key value pair (object) using `uri` attribute. It is mandatory to specify width and height for Network images.
+
+# For static images react native can infer the dimensions from the file data.
+
+# Image component is utilized to render images in react native. We can display static images, Network images and even local images from the camera roll.
