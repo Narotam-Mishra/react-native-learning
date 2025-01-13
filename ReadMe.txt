@@ -59,9 +59,9 @@ a). `start` - start script is used to initiate the development server and there 
 
 2). `package-lock.json` :- this file ensures the consistent installation of project dependencies.
 
-3). `babel.config.js` :- this file serves as the babel configuration file, it applies the babel preset Expo preset etending the default react native preset. This configuration adds support for decorators pre-shaking web packages and loading font icons with optional native depedencies provided they're installed. if needed, we can modify this file to include additional Babel plugins or presets.
+3). `babel.config.js` :- this file serves as the babel configuration file, it applies the babel preset Expo preset extending the default react native preset. This configuration adds support for decorators, pre-shaking web packages and loading font icons with optional native depedencies provided they're installed. if needed, we can modify this file to include additional Babel plugins or presets.
 
-4). `app.json` :- this an important file as it contains configuration options for the project, these options alter project's behavior during development building submitting and updating the app. Through out this learning we will learn about differnt entries in this file.
+4). `app.json` :- this an important file as it contains configuration options for the project, these options alter project's behavior during development, building, submitting, and updating the app. Through out this learning we will learn about differnt entries in this file.
 
 5). `App.js` - this file serves as the default screen of our project. It acts as the root file that loads when we start the development server with command `npm start` (similar to that of App.jsx in react project)
 
@@ -136,15 +136,15 @@ a). `start` - start script is used to initiate the development server and there 
 
 # The View component is a fundamental core component in React Native that serves as building block for creating user interfaces. It functions as a container that supports layout using flexbox, styling, touch handling and accessibility controls. In web development terms, the View component can be compared to the `<div>` tag. The View component is typically nested inside other views and can have zero or more children of any type. It provides the structure and organization for other components in the UI.
 
-# View component is an essential core component in react native serving as a building block for creating UIs. it acts as a container that supports layout and styling. View component can be nested as well.
+# View component is an essential core component in react native serving as a building block for creating UIs. It acts as a container that supports layout and styling. View component can be nested as well.
 
 ## Lec 9 - Text (3:33)
 
-# Text - It is component for displaying text. It supports nesting, styling and touch handling. Depending on the target platform, React Native will translate this component to either a UITextView (iOS), a TextView (Android), or a `p` (web).
+# Text - It is component for displaying text. It supports nesting, styling and touch handling. Depending on the target platform, React Native will translate this component to either a UITextView (iOS), a TextView (Android), or a paragraph tag `<p></p>` (web).
 
-# In React Native all text nodes must be wrapped inside a text component. Directly placing text under a view is not allowed..
+# In React Native all text nodes must be wrapped inside a text component. Directly placing text under a view is not allowed.
 
-# We can also next `Text` component.
+# We can also nest `Text` component.
 
 # The `Text` component is essential for displaying text in react native. Every text node within a view must be wrapped with the text component.
 
@@ -157,9 +157,9 @@ a). `start` - start script is used to initiate the development server and there 
 
 # React Native seamlessly translates the Image component to platform-specific counterparts
 :-
-# UIImageView fro iOS,
+# UIImageView for iOS,
 # ImageView for Android,
-# `img` for the Web
+# image tag `img` for the Web
 
 # Begin by rendering static image from local,
 
@@ -168,3 +168,19 @@ a). `start` - start script is used to initiate the development server and there 
 # For static images react native can infer the dimensions from the file data.
 
 # Image component is utilized to render images in react native. We can display static images, Network images and even local images from the camera roll.
+
+## Lec 11 - Scroll View (3:36)
+
+# Due to huge long text we are not able to scroll the react native app to 2nd below image. So this is a critical distinction between web development and react native app development.
+
+# Although a `div` tag is similar to view component, it doesn't scroll automatically.
+
+Q. If we are not able to scroll the react native app to view entire content then how can we view the entire content?
+# Using `Scroll View`
+
+# ScrollView
+# ScrollView component wraps the platform-specific scrolling functionality. It require a bounded height to function properly.
+
+# Import `ScrollView` component from react-native and replace it with `View` component. After adding this we can check scrolling effect added in the react-native app. However we still can't fully see the end of the second image and this issue arises from the padding on the scroll view component. To address this, we can nest the `ScrollView` within `View` component.
+
+# Unlike `<div>` tag in web development, the `View` component in react-native doesn't scroll by default. For scrollable content we should utilize the `ScrollView` component and ensure it has a bounded height.
