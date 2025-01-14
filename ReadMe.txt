@@ -184,3 +184,17 @@ Q. If we are not able to scroll the react native app to view entire content then
 # Import `ScrollView` component from react-native and replace it with `View` component. After adding this we can check scrolling effect added in the react-native app. However we still can't fully see the end of the second image and this issue arises from the padding on the scroll view component. To address this, we can nest the `ScrollView` within `View` component.
 
 # Unlike `<div>` tag in web development, the `View` component in react-native doesn't scroll by default. For scrollable content we should utilize the `ScrollView` component and ensure it has a bounded height.
+
+## Lec 12 - Button (3:59)
+
+# The button component allows users to trigger actions. It has platform-specific rendering for iOS and Android.
+
+Q. How Button component is different from button tag in HTML?
+# Unlike the HTML button element the button component in react native has self-closing tag, there is no inner text or the closing tag for react native button component. To specify the button text we use a prop called `title`.
+
+# `click` Event Handling in reeact native - in react application development, we used to use `onClick` prop to listen to click events on the button. Similarly in react native the button component provides an `onPress` prop.
+
+# `color` prop in Button component of react native :- `color` prop allow easy customization of the button color.
+
+# `disabled` prop - mainly used in form handling.
+# It is better to manage a state variable to control the `disabled` prop value instead of directly assigning `true` or `false`.
