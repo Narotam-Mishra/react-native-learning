@@ -192,7 +192,7 @@ Q. If we are not able to scroll the react native app to view entire content then
 Q. How Button component is different from button tag in HTML?
 # Unlike the HTML button element the button component in react native has self-closing tag, there is no inner text or the closing tag for react native button component. To specify the button text we use a prop called `title`.
 
-# `click` Event Handling in reeact native - in react application development, we used to use `onClick` prop to listen to click events on the button. Similarly in react native the button component provides an `onPress` prop.
+# `click` Event Handling in react native - in react application development, we used to use `onClick` prop to listen to click events on the button. Similarly in react native the button component provides an `onPress` prop.
 
 # `color` prop in Button component of react native :- `color` prop allow easy customization of the button color.
 
@@ -200,3 +200,20 @@ Q. How Button component is different from button tag in HTML?
 # It is better to manage a state variable to control the `disabled` prop value instead of directly assigning `true` or `false`.
 
 ## Lec 13 - Pressable (4:17)
+
+# There are times when we need to trigger actions on the press of other elements such as images or text, to address this requirement react native provides a component called `Pressable`.
+
+# `Pressable` is a wrapper component that detects various stages of press interactions on its defined children.
+
+# To detect press we will wrap the required component with a `Pressable` component. Similar to button component the `Pressable` component accepts the `onPress` prop to handle the press event.
+
+# If we feel native button component doesn't meet your app's requirements, then we can create a custom button using `Pressable` component
+
+# We can create a custom button using Pressable.
+
+# In addition to `onPress`, the Pressable component supports several other events that we can listen to
+- `onPress` is called when a press is activated,
+- `onLongPress` is triggered when a press is held for longer than 500 milliseconds.
+- `onPressOut` is called when the press gester is deactivated
+
+# After triggering `onPressIn` the user removes their finger triggering `onPressOut` which is followed by `onPress` however if the user keeps their finger pressed for more than 500 milliseconds after `onpressIn`, `onLonPress` is triggered followed by `onpressOut`
