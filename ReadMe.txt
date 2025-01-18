@@ -217,3 +217,25 @@ Q. How Button component is different from button tag in HTML?
 - `onPressOut` is called when the press gester is deactivated
 
 # After triggering `onPressIn` the user removes their finger triggering `onPressOut` which is followed by `onPress` however if the user keeps their finger pressed for more than 500 milliseconds after `onpressIn`, `onLonPress` is triggered followed by `onpressOut`
+
+## Lec 14 - Modal (6:39)
+
+# Modal is a screen that overlays the app content to provide important information or prompt the user for a decision. Since they are purposefully interruptive make sure we use them only when necessary.
+
+# Example - Let us learn how to show and hide a model on press of a button
+
+# By default, Modal is always visible, we need to control its visibility based on user interaction. To achieve this, we require a state variable,
+
+# `visible` - it is boolean prop which is used to set visibility of the modal,
+
+# `onRequestClose` - another prop on modal which is used close the modal. It is triggered when the user presses the back button on Android or dismiss the Modal with gester on iOS.
+
+# `animationType` :- this prop is used to open modal with animation. Bydefault it's value is none. Other values that we can assign to this prop are 1). `slide`, 2). `fade`
+
+# `presentationStyle` - this prop deals with presentation style of the modal.Bydefault it's value is `fullScreen`. Other values that we can assign to this prop are 1). `formSheet`, 2). `pageSheet`.
+
+# `formSheet` also provides a similar UI but they differ on larger iOS devices. `formSheet` is narrow where as `pageSheet` is wider. 
+
+# Note - `presentationStyle` prop only affects iOS and not Android.
+
+# Modal component in react native allow us to present important information or prompt user decisions.
