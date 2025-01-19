@@ -239,3 +239,17 @@ Q. How Button component is different from button tag in HTML?
 # Note - `presentationStyle` prop only affects iOS and not Android.
 
 # Modal component in react native allow us to present important information or prompt user decisions.
+
+## Lec 15 - Status Bar (3:21)
+
+# The `StatusBar` component allows us to control the application's status bar which is the area typically located at the top of the screen.
+
+# The status bar is the zone, typically at the top of the screen, that displays the current time, Wi-Fi and network information, battery level and other status icons.
+
+# backgroundColor="lightgreen" - this prop is used to specify background color for the status bar and it is specific to the Android devices.
+
+# The prop to control the text color is called `barStyle`and its default value is default in string
+
+# We can choose `hidden` prop to hide the status bar
+
+# Although we can't change the background color on iOS but we can adjust text color on both platforms.
