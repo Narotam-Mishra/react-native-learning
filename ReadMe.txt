@@ -253,3 +253,19 @@ Q. How Button component is different from button tag in HTML?
 # We can choose `hidden` prop to hide the status bar
 
 # Although we can't change the background color on iOS but we can adjust text color on both platforms.
+
+## Lec 16 - Activity Indicator (3:10)
+
+# The ActivityIndicator component displays a circular loading indicator. It is used to inform users about the status of ongoing processes, such as loading an app, submitting a form, or saving updates.
+
+# Although the ActivityIndicator component in Android and iOS devices have slight visual differences they effectively convey the message that something is happening in the background.
+
+# Important props available in the ActivityIndicator component :-
+1). `size` :- It is used to specify the size of the laoding spinner. By default its value is `small`
+
+2). `color` - it is used to specify the color to loading spinner. By default it uses the system accent deafult color for Android and a shade of gray for iOS,
+
+3). `animating` - this prop is used to control the visibility of the component. By default it is set to `true` which is why we are able to see running loading spinner.
+
+# A better approach to toggle the animating value using useState hook.
+
