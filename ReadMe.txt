@@ -269,3 +269,13 @@ Q. How Button component is different from button tag in HTML?
 
 # A better approach to toggle the animating value using useState hook.
 
+## Lec 17 - Alert (4:18)
+
+# Alert component technically it serves more as an API than a typical component, rather than rendering it as a part of JSX we invoke methods that generate UI elements. 
+
+# When using `Alert` we can launch another dialog with a specified title and message. Optionally we can also specify a list of buttons.
+
+# By default `Alert` box contain `OK` button. We can also optionally specify a message as the second parameter.
+
+Q. How we can control the buttons shown in the `Alert`?
+# on iOS we can specify any number of buttons while on Android the limit is three.
