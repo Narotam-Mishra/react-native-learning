@@ -295,3 +295,19 @@ Q. How we can control the buttons shown in the `Alert`?
 10), Alert
 
 # Create and manage Custom Component :- Althought the component that we have created in example (Greet) is simple but we can imagine creating reusable custom components such as custom Card component, a custom button component, a custom ListItem and many more.
+
+## Lec 19 - Styling (1:44)
+
+# Styling React Native apps share similarities with styling web apps but it also introduces some key differences. The most notable difference is that react native doesn't use CSS for styling instead we style our app using JavaScript itself.
+
+# The naming conventions for styles and their values are similar to CSS on the Web but with a slight modification, names are written in camel case notation. For example - `background-color` is written as `backgroundColor`.
+
+# Styling Approaches :-
+1). Inline styles - Inline styles with the `style` prop which is accepted by the most of the core components,
+
+2).StyleSheet API - this approach involves using the StyleSheet API provided by react native. This API allows us to define multiple styles in one place using the create method.
+
+# In this section we will focus on :-
+1). StyleSheet API,
+2). Style various core components,
+3). Styling across iOS and Android
