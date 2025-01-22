@@ -279,3 +279,19 @@ Q. How Button component is different from button tag in HTML?
 
 Q. How we can control the buttons shown in the `Alert`?
 # on iOS we can specify any number of buttons while on Android the limit is three.
+
+## Lec 18 - Custom Components (3:06)
+
+# Core components provided by react native :-
+1). View,
+2). Text,
+3). Image,
+4). ScrollView,
+5). Button,
+6). Pressable,
+7). Modal,
+8). StatusBar,
+9). ActivityIndicator,
+10), Alert
+
+# Create and manage Custom Component :- Althought the component that we have created in example (Greet) is simple but we can imagine creating reusable custom components such as custom Card component, a custom button component, a custom ListItem and many more.
