@@ -50,7 +50,8 @@ Q. Why to learn React Native?
 # Let us create our first React Native app.
 
 # Technically it will be Expo project, creating a new `Expo` project is as simple as running a single line of code using below command :-
-`npx create-expo-app@latest project-name`
+
+=> `npx create-expo-app@latest project-name`
 
 # Folder structure of the React Native project :-
 
@@ -311,3 +312,17 @@ Q. How we can control the buttons shown in the `Alert`?
 1). StyleSheet API,
 2). Style various core components,
 3). Styling across iOS and Android
+
+## Lec 20 - StyleSheet API (5:55)
+
+# StyleSheet API allows us to style components in react native. For Styling there is new project directory being created named `stylingRN`
+
+# command to create React Native project project using old version - `npx create-expo-app@latest stylingRN --template blank@sdk-49`
+
+# Although inline styles work fine but they are not the recommended approach for styling in react native. The preferred method is to use the stylesheet API.
+
+Q. Why we should prefer StyleSheet API over inline styling?
+# There are couple of reasons :-
+1). by moving styles away from the render function we make the code easier to read and understand,
+2). naming the styles adds meaning to the low level components in the render function,
+3). organising styles in this manner makes the code reusable and easier to maintain. 
