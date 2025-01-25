@@ -325,4 +325,15 @@ Q. Why we should prefer StyleSheet API over inline styling?
 # There are couple of reasons :-
 1). by moving styles away from the render function we make the code easier to read and understand,
 2). naming the styles adds meaning to the low level components in the render function,
-3). organising styles in this manner makes the code reusable and easier to maintain. 
+3). organising styles in this manner makes the code reusable and easier to maintain.
+
+## Lec 21 - Multiple Styles (5:12)
+
+# Let us explore how we can apply multiple styles to a component,
+
+Q. How doe we specify multiple styles for a component?
+# we achieve that using an array of styles,
+
+# one point to remember while using multiple styles on a component is that when merging different styles the last style in the array takes precedence so even if we add a background color to box (let say backgroundColor: "pink") , the box style will continue to render with their respective colors however if we change the order in the array then we can see the specified color to box.
+
+# Note - When merging the background color from the two styles the value from the last element in the array takes precedence.
