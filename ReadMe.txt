@@ -337,3 +337,19 @@ Q. How doe we specify multiple styles for a component?
 # one point to remember while using multiple styles on a component is that when merging different styles the last style in the array takes precedence so even if we add a background color to box (let say backgroundColor: "pink") , the box style will continue to render with their respective colors however if we change the order in the array then we can see the specified color to box.
 
 # Note - When merging the background color from the two styles the value from the last element in the array takes precedence.
+
+## Lec 22 - Box Model (5:41)
+
+# Let us take a look at the different styles applicable in the relation to the `Box Model`.
+
+# CSS Box Model represents a box that encloses every HTML elements consisting of margins, borders, padding & the actual content. These properties are also applicable to the react native components.
+
+# In react native all dimensions are unitless and represent density independent pixels, new specific units like `rem` or `pixels` are required.
+
+# similar to CSS for web, react native allows us to specify padding in all four directions.
+
+# margin property also functions similarly to its CSS counterpart for web,
+
+# Border shorthand properties that we used on web will not work on react native instead we need to specify the properties individually
+
+# `borderRadius` nuance in iOS and Android :- when we apply borderRadius property on Text component, it will only work on Android device not on iOS however if we apply `borderRadius` property on `View` component, it work on both Android and iOS devices.
