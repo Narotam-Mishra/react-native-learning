@@ -23,7 +23,7 @@ Q. Why to learn React Native?
 
 ## Lec 2 - Expo vs React Native (2:45)
 
-# Expo vs React Native :- while both frameworks are allowed for the development of Android and iOS apps they differ significantly in terms of maintenance ease of setup and platform compatibility.
+# Expo vs React Native :- while both frameworks are allowed for the development of Android and iOS apps they differ significantly in terms of maintenance, ease of setup and platform compatibility.
 
 # React Native (RN) is an open-source framework maintained by Meta (Facebook), designed for building cross-platform apps.
 
@@ -31,15 +31,15 @@ Q. Why to learn React Native?
 
 # Unlike plain RN, which can be challenging and time-consuming to set up, Expo provides a streamlined experience. Expo has a suite of tools and services built around React Native, which greatly simplifies the development process.
 
-# If it helps Expo is to React Native how Nextjs is to React.
+# If it helps, Expo is to React Native how Nextjs is to React.
 
-# Note - With plain Reacgt Native, we cannot build iOS apps on a windows or linux machine. native iOS apps can only be built on a macOS machine.
+# Note - With plain React Native, we cannot build iOS apps on a windows or linux machine. Native iOS apps can only be built on a macOS machine.
 
 # With Expo, we can develop our app on windows or linux and run that app on a physical iPhone.
 
 # Expo 
 
-# Expo has evolved significantly over the years and now supports nearly all the features necessary for building mobile apps.
+# Expo has evolved significantly over the years and now supports nearly all the features necessary for building enterprise mobile apps.
 
 # In the event that we require access to native Android or iOS code, Expo allows us to eject our app and work with a plain React Native codebase. This flexibility ensures that we have the option to leverage the additional functionalities provided by Expo while still retaining the ability to tap into native code when necessary.
 
@@ -60,7 +60,7 @@ a). `start` - start script is used to initiate the development server and there 
 
 2). `package-lock.json` :- this file ensures the consistent installation of project dependencies.
 
-3). `babel.config.js` :- this file serves as the babel configuration file, it applies the babel preset Expo preset extending the default react native preset. This configuration adds support for decorators, pre-shaking web packages and loading font icons with optional native depedencies provided they're installed. if needed, we can modify this file to include additional Babel plugins or presets.
+3). `babel.config.js` :- this file serves as the babel configuration file, it applies the babel preset Expo preset extending the default react native preset. This configuration adds support for decorators, pre-shaking web packages and loading font icons with optional native depedencies provided they're installed. If needed, we can modify this file to include additional Babel plugins or presets.
 
 4). `app.json` :- this an important file as it contains configuration options for the project, these options alter project's behavior during development, building, submitting, and updating the app. Through out this learning we will learn about differnt entries in this file.
 
@@ -117,7 +117,7 @@ a). `start` - start script is used to initiate the development server and there 
 
 # Core Components contd..
 
-# In Android and iOS app development, we employ a fundamental building block called a `view` for user interfaces. A view is a small rectangular element on the screen that can display text, images or respond to user input.
+# In Android and iOS app development, we employ a fundamental building block called a `View` for user interfaces. A view is a small rectangular element on the screen that can display text, images or respond to user input.
 
 # Android - views are written in Kotlin or Java,
 
@@ -147,7 +147,7 @@ a). `start` - start script is used to initiate the development server and there 
 
 # We can also nest `Text` component.
 
-# The `Text` component is essential for displaying text in react native. Every text node within a view must be wrapped with the text component.
+# The `Text` component is essential for displaying text in react native. Every text node within a view must be wrapped with the `Text` component.
 
 ## Lec 10 - Image (5:50)
 
@@ -172,7 +172,7 @@ a). `start` - start script is used to initiate the development server and there 
 
 ## Lec 11 - Scroll View (3:36)
 
-# Due to huge long text we are not able to scroll the react native app to 2nd below image. So this is a critical distinction between web development and react native app development.
+# Due to huge long text we are not able to scroll the react native app to below 2nd image. So this is a critical distinction between web development and react native app development.
 
 # Although a `div` tag is similar to view component, it doesn't scroll automatically.
 
@@ -353,3 +353,13 @@ Q. How doe we specify multiple styles for a component?
 # Border shorthand properties that we used on web will not work on react native instead we need to specify the properties individually
 
 # `borderRadius` nuance in iOS and Android :- when we apply borderRadius property on Text component, it will only work on Android device not on iOS however if we apply `borderRadius` property on `View` component, it work on both Android and iOS devices.
+
+## Lec 23 - Shadow and Elevation (3:53)
+
+# working with shadow - applying box Shadows using CSS for the web is straightforward we specify the horizontal offset, vertical offset, blur, spread and color. However in react native, we use a group of four properties.
+
+# When we apply `boxShadow` styles it will only work on iOS device not on Android device.
+
+# There are no common styles to apply shadows in both iOS and Android. To add `boxShadow` effect in Android, we have to use `elevation` property which internally utilizes the Android elevation API.
+
+# `shadowColor` is the only property that works on both iOS and Android. 
