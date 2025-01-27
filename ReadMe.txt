@@ -362,4 +362,10 @@ Q. How doe we specify multiple styles for a component?
 
 # There are no common styles to apply shadows in both iOS and Android. To add `boxShadow` effect in Android, we have to use `elevation` property which internally utilizes the Android elevation API.
 
-# `shadowColor` is the only property that works on both iOS and Android. 
+# `shadowColor` is the only property that works on both iOS and Android.
+
+## Lec 24 - Style Inheritance (4:41)
+
+# In CSS for Web, setting a fony color on a div tag applies the same color to nested paragraph tags within the div tag, this is possible due to inheritance which is a feature in CSS, the paragraph (<p> tag) inherits the same color from its parent div tag. However when working with styles in react native app there no inheritance of styles from a `View` component to `Text` component, in order to set text color to white we need to create and apply a separate style on this text component.
+
+# Although React Native's style inheritance capabilities are limited compared to CSS it still supports style inheritance within `Text` subtree. In our example, the white color from the parent text component is inheriited by the nested text component. So, inheritance from `View` to `Text` doesn't work but from `Text` to another nested `Text` does work.
