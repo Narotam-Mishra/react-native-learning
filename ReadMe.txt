@@ -366,6 +366,27 @@ Q. How doe we specify multiple styles for a component?
 
 ## Lec 24 - Style Inheritance (4:41)
 
-# In CSS for Web, setting a fony color on a div tag applies the same color to nested paragraph tags within the div tag, this is possible due to inheritance which is a feature in CSS, the paragraph (<p> tag) inherits the same color from its parent div tag. However when working with styles in react native app there no inheritance of styles from a `View` component to `Text` component, in order to set text color to white we need to create and apply a separate style on this text component.
+# In CSS for Web, setting a font color on a div tag applies the same color to nested paragraph tags within the div tag, this is possible due to inheritance which is a feature in CSS, the paragraph (<p> tag) inherits the same color from its parent div tag. However when working with styles in react native app there no inheritance of styles from a `View` component to `Text` component, in order to set text color to white we need to create and apply a separate style on this text component.
 
 # Although React Native's style inheritance capabilities are limited compared to CSS it still supports style inheritance within `Text` subtree. In our example, the white color from the parent text component is inheriited by the nested text component. So, inheritance from `View` to `Text` doesn't work but from `Text` to another nested `Text` does work.
+
+## Lec 25 - Layout with Flexbox (2:25)
+
+# At the core of layout design in React Native is Flexbox
+
+# Flexbox is a powerful one-dimensional layout model used to arrange elements within a container. With Flexbox, we can have the freedom to arrange items either horizontally (from left to right or right to left) or vertically (from top to bottom or bottom to top).
+
+# We can easily control the spacing and alignment of items within the container.
+
+# Flexbox :- It consists of two main entities
+- flex container
+- flex items
+
+# When we work with flexbox we encounter two axes the main axis and the cross axis
+
+# Main Axis - By default main axis runs from left to right and 
+# Cross Axis is perpendicular to it, running from top to bottom
+
+# In React Native above Main axis and Cross axis concepts are opposite. The Main Axis runs from top to bottom and the cross axis left to right,
+
+# Learning Flexbox - It is much like learning CSS where we need to familiarize ourself with the various Flexbox properties and understand how they function. Once we grasp the concepts of Flexbox, we'll have a solid understanding of how layouts are created in React Native.
