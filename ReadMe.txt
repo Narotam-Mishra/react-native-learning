@@ -390,3 +390,15 @@ Q. How doe we specify multiple styles for a component?
 # In React Native above Main axis and Cross axis concepts are opposite. The Main Axis runs from top to bottom and the cross axis left to right,
 
 # Learning Flexbox - It is much like learning CSS where we need to familiarize ourself with the various Flexbox properties and understand how they function. Once we grasp the concepts of Flexbox, we'll have a solid understanding of how layouts are created in React Native.
+
+## Lec 26 - Code Setup (5:21)
+
+# New Project dir - RNLayout
+
+# Command to create new project - `npx create-expo-app@latest RNLayout --template blank@sdk-49`
+
+# In View section, box component will be act as a flex item within a flex container 
+
+# `children` prop allow the parent to control the text rendered inside the box and style prop allows the parent component to extend the Styles applied to the Box component.
+
+
