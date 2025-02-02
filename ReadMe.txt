@@ -401,4 +401,20 @@ Q. How doe we specify multiple styles for a component?
 
 # `children` prop allow the parent to control the text rendered inside the box and style prop allows the parent component to extend the Styles applied to the Box component.
 
+## Lec 27 - Flex (6:07)
 
+# Explore first flexbox property which is `flex`
+
+# The `flex` property plays a crucial role in defining how much of a view will fill the screen along the main axis. It accepts an integer value greater than or equal to 0, indicating the fration of the available space the component should occupy.
+
+# In CSS for Web we need to specify display `flex` to turn a div block into a flex container however in React Native the `View` component is automatically set to display `flex` by default. So View container is a already flex container.
+
+# By default `View` component only occupies enough space to accommodate its children and when it has no children it occupies no space. However if we want the view to take up the entire available space then we use `flex : 1`,
+
+# To ensure the container occupies the entire available space which is extra space at the bottom, set `flex:1` in container's style,
+
+# `flex` value greater than 1 can result in uneven distribution of the available space between the items.
+
+# Note - `flex` property is not just limited to the flex container but it is also applicable to the flex items
+
+# A `View` component has display `flex` by default, when we set `flex: 1` on a container, it takes up the entire available space. If we set `flex` on an item it takes up a fraction or percentage of the avilable space which could be 100 or lesser amount depending on how the available space has been divide.
