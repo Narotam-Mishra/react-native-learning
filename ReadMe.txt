@@ -418,3 +418,13 @@ Q. How doe we specify multiple styles for a component?
 # Note - `flex` property is not just limited to the flex container but it is also applicable to the flex items
 
 # A `View` component has display `flex` by default, when we set `flex: 1` on a container, it takes up the entire available space. If we set `flex` on an item it takes up a fraction or percentage of the avilable space which could be 100 or lesser amount depending on how the available space has been divide.
+
+## Lec 28 - Flex Direction (3:04)
+
+# The `flexDirection` property establishes the main axis, which in turn determines how the flex items are placed within the container. By default, the main axis flows from top to bottom (column), causing the items to be displayed from top to bottom in the UI. By changing the value of the `flexDirection` property, we can alter how the items are positioned.
+
+# Default value of `flexDirection` is column.
+
+# `flexDirection` value `row` ensures left to right placement of boxes.
+
+# Summary - `flexDirection` property sets the direction of the main axis thereby controlling how the items are placed within the container. The possible values are - column, column-reverse, row & row-reverse
