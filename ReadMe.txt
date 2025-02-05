@@ -427,4 +427,22 @@ Q. How doe we specify multiple styles for a component?
 
 # `flexDirection` value `row` ensures left to right placement of boxes.
 
-# Summary - `flexDirection` property sets the direction of the main axis thereby controlling how the items are placed within the container. The possible values are - column, column-reverse, row & row-reverse
+# Summary - `flexDirection` property sets the direction of the main axis thereby controlling how the items are placed within the container. The possible values are - column, column-reverse, row & row-reverse.
+
+## Lec 29 - Justify Content (4:35)
+
+# `justifyContent` property defines the alignment along the main axis.
+
+# `justifyContent` is a property that we set on the container to control the alignment of its items.
+
+# By default `justifyContent` value is set to `flex- start`
+justifyContent: 'flex-start'
+
+# Note - Here individual item not move , items move in group.
+
+# Flexbox provides additional values that controls how the extra space is distributed within the container. Those values 
+are space-between, space-evenly & space-around
+
+# `justifyContent` property aligns items based on the main axis.
+
+# Possible values of `justifyContent` are :- flext-start, flex-end, center, space-between, space-evenly & space-around
