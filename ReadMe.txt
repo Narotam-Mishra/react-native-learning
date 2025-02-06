@@ -456,3 +456,15 @@ are space-between, space-evenly & space-around
 # We can think of `baseline` as the line upon which the most letters sit in a word like, `Sphinx`. Relating this to flexbox the `baseline` value will align flex items based on their contents baseline.
 
 # Possible values of `alignItems` property are - `stretch`, `flex-start`, `flex-end`, `center` & `baseline`
+
+## Lec 31 - Align Self (4:03)
+
+# `alignItems` property is applied to the container and controls the alignment of all items within it,
+
+# `alignSelf` is applied to individual items, allowing us to control the alignment of each item independently.
+
+# The values available for `alignSelf` are similar to those used in alignItems.
+
+# The default value for `alignSelf` is `auto` and it inherits its value from the `alignItems` property of the parent flex container.
+
+# When `alignSelf` is set to `auto` it takes the value of the parents align items property which is `stretch`
