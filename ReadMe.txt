@@ -446,3 +446,13 @@ are space-between, space-evenly & space-around
 # `justifyContent` property aligns items based on the main axis.
 
 # Possible values of `justifyContent` are :- flext-start, flex-end, center, space-between, space-evenly & space-around
+
+## Lec 30 - Align Items (3:15)
+
+# `alignItems` property defines the default behavior for laying out flex items along the container's cross-axis. It works similarly to `justifyContent` property but in the perpendicular direction.
+
+# By default the value of `alignItems` property is set to `stretch` that means the flex items will stretch the entire length of the Cross axis which typically flows from left to right.
+
+# We can think of `baseline` as the line upon which the most letters sit in a word like, `Sphinx`. Relating this to flexbox the `baseline` value will align flex items based on their contents baseline.
+
+# Possible values of `alignItems` property are - `stretch`, `flex-start`, `flex-end`, `center` & `baseline`
