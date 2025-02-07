@@ -468,3 +468,15 @@ are space-between, space-evenly & space-around
 # The default value for `alignSelf` is `auto` and it inherits its value from the `alignItems` property of the parent flex container.
 
 # When `alignSelf` is set to `auto` it takes the value of the parents align items property which is `stretch`
+
+## Lec 32 - Flex Wrap (3:41)
+
+# `flexWrap` - This property allows to control how flex items behave when there's limited space within the container.
+
+# To prevent overflow and handle limited space more effectively we can use the flex wrap property.
+
+# The default value for `flexWrap` property is `nowrap`
+
+# Note - For `flexWrap` : `wrap`, wrapping always occurs from the last item, wrap-reverse just pushes items to the previous column instead of the next column.
+
+# Possible values for `flexWrap` property are - `nowrap`, `wrap` & `wrap-reverse` 
