@@ -480,3 +480,15 @@ are space-between, space-evenly & space-around
 # Note - For `flexWrap` : `wrap`, wrapping always occurs from the last item, wrap-reverse just pushes items to the previous column instead of the next column.
 
 # Possible values for `flexWrap` property are - `nowrap`, `wrap` & `wrap-reverse` 
+
+## Lec 33 - Align Content (3:47)
+
+# `alignContent` property aligns lines of content along the cross axis. It is similar to how the `alignItems` property aligns individual items along the cross-axis. A very important condition is that multiple columns or rows must exist within the container.
+
+# The `alignContent` property is used to align these lines of content within the container along the cross access.
+
+# The default value for `alignContent` is `flex-start` which places the both colums at the start of the cross axis where cross axis runs from left to right.
+
+# Possible values of `alignContent` property are - `flex-start`, `flex-end`, `center`, `stretch`, `space-between` & `space-around`
+
+# Summary - The `alignContent` property aligns line of content along cross axis and distributes any extra spacing in the parent container.
