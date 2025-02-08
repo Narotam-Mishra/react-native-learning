@@ -492,3 +492,12 @@ are space-between, space-evenly & space-around
 # Possible values of `alignContent` property are - `flex-start`, `flex-end`, `center`, `stretch`, `space-between` & `space-around`
 
 # Summary - The `alignContent` property aligns line of content along cross axis and distributes any extra spacing in the parent container.
+
+## Lec 34 - Gap (2:13)
+
+# Gap related properties allow us to manage spacing between rows and columns. There are three main properties which comes under this :-
+1). rowGap - to set gap between rows, we should use this property,
+
+2). columnGap - to set gap between columns, we should use this property,
+
+3). gap - to set gap between both rows & columns, we should use this property

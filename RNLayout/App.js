@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     // flex: 1,
     height: 300,
     flexWrap: "wrap",
-    alignContent: "space-around",
+    gap: 10,
     marginTop: 64,
     borderWidth: 6,
     borderColor: "red"
