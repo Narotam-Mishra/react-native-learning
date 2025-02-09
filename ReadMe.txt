@@ -501,3 +501,17 @@ are space-between, space-evenly & space-around
 2). columnGap - to set gap between columns, we should use this property,
 
 3). gap - to set gap between both rows & columns, we should use this property
+
+## Lec 35 - Flex Basis (2:30)
+
+# The `flex-basis` property determines the initial size of a flex item before any extra space in the container is distributed. It is serves as an alternative to using the height and width properties in flex layouts.
+
+# By default Flex items have an initial height based on the Box model.
+
+Q. What if we want a specific item to be taller intentionally?
+# In such cases we should use the `flex-basis` property
+
+# Can we use `height` property to give height to Box instead of `flex-basis`?
+# yes, but there is a difference in both methods, suppose we want both both `Box3` & `Box4` to take up the available space in the container (using flex: 1), box3 is taller than box4 because the available space is distributed proportionally with respect to the flex basis but not the height property.
+
+# Flex basis sets the initial width of an item if the parent container direction is `row` instead of `column`. so we can say that the `flex-basis` property is used to set the initial size of a flex item.
