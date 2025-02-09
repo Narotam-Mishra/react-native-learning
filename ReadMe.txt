@@ -515,3 +515,15 @@ Q. What if we want a specific item to be taller intentionally?
 # yes, but there is a difference in both methods, suppose we want both both `Box3` & `Box4` to take up the available space in the container (using flex: 1), box3 is taller than box4 because the available space is distributed proportionally with respect to the flex basis but not the height property.
 
 # Flex basis sets the initial width of an item if the parent container direction is `row` instead of `column`. so we can say that the `flex-basis` property is used to set the initial size of a flex item.
+
+## Lec 36 - Flex Shrink (3:00)
+
+# `flexShrink` property determines how children within a container shrink along the main axis when their combined size exceeds the container's size.
+
+# The `flexShrink` factor is relative to other items within the container.
+
+# Initially every flex item has a default `flexShrink` value of 0, so the items overflow the container however we can control the shrinking behavior by setting a positive value for `flexShrink` property. 
+
+# The shrink factor is relative to other items, meaning that if we set `flexShrink` as 2 then it will shrink twice as much as the first box.
+
+# Summary - `flexShrink` property dictates how flex items should behave when their default size is larger than flex container. By default the value `flexShrink` is 0 on every flex item which causes the items to overflow the container however setting a positive value for `flexShrink` will make the items shrink when necessary and the amount of shrinkage will be relative to other items in the container.
