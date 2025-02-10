@@ -527,3 +527,20 @@ Q. What if we want a specific item to be taller intentionally?
 # The shrink factor is relative to other items, meaning that if we set `flexShrink` as 2 then it will shrink twice as much as the first box.
 
 # Summary - `flexShrink` property dictates how flex items should behave when their default size is larger than flex container. By default the value `flexShrink` is 0 on every flex item which causes the items to overflow the container however setting a positive value for `flexShrink` will make the items shrink when necessary and the amount of shrinkage will be relative to other items in the container.
+
+## Lec 37 - Flex Grow (4:35)
+
+# `flexGrow` - It determines how much space an item should occupy inside a flex container when there is a extra space available. Similar to `flexShrink` the `flexGrow` factor is always relative to other items within the container.
+
+# By default, flex items only take up the space required to fit their content and this results in extra space within the container. However there are situations where we want the flex items to grow and fill up the remaining space. By default, all the flex items have a `flexGrow` value of 0 which prevents them using the available extra space, to change this behavior we can use the `flexGrow` property with a positive value.
+
+# If we want all items to grow and use the extra space evenly then we can apply `flexGrow`: 1, to all flex items.
+
+# `flex` vs `flexGrow`
+
+Q. How `flexGrow` is differ from `flex` property?
+# When `flex` is set to a positive number, it is equivalent to setting `flexGrow` with the same positive number. `flex` property also implicitly sets `flexShrink` to 1 and `flexBasis` to 0.
+
+# flex: <positive number>
+
+# flexGrow: `<positive number>`, flexShrink: 1, flexbasis: 0
