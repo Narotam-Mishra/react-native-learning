@@ -544,3 +544,19 @@ Q. How `flexGrow` is differ from `flex` property?
 # flex: <positive number>
 
 # flexGrow: `<positive number>`, flexShrink: 1, flexbasis: 0
+
+## Lec 38 - Relative and Absolute Layout (4:13)
+
+# Two essential types of Layout ---> Relative and Absolute Layout 
+
+# The layouts are based on the `position` property which defines how an element is positioned within its parent container. There are two possible values for position property :-
+1). relative,
+2). absolute
+
+1). Relative Layout :- The default value for `position` property is `relative`. In this layout, an element is posiitoned according to the normal flow of the layout. It remains in its original position and can be offset from that posiiton using the `top`, `right`, `bottom` and `left` values. Importantly, this offset doesn't affect the posiitoning of any sibling or parent elements.
+
+2). Absolute Layout - In this layout, an element doesn't participate in the normal flow of the layout. It is instead laid out independently of its sibling. The position of the element is determined by the top, right, bottom and left values which specify specific coordinates relative to its parent container. 
+
+# Relative layout is recommended when responsiveness and adaptability are crucial for our application as it offers a more maintainable and flexible approach for handling different screen sizes and orientations.
+
+# Absolute Layout is recommended when we need precise control over the position and size of UI components and for building custom animations with fixed coordinates.
