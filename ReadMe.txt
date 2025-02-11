@@ -47,6 +47,8 @@ Q. Why to learn React Native?
 
 ## Lec 3 - Hello World (5:51)
 
+# Section 1 - Basics of React Native
+
 # Let us create our first React Native app.
 
 # Technically it will be Expo project, creating a new `Expo` project is as simple as running a single line of code using below command :-
@@ -108,6 +110,8 @@ a). `start` - start script is used to initiate the development server and there 
 4). run the device by clicking `play` button,
 
 5). with the Android Emulator running in the background return to VS Code and follow terminal commands to run the app on Android Emulator
+
+# Section 2 - Core Components 
 
 ## Lec 7 - Core Components (02:48)
 
@@ -313,6 +317,8 @@ Q. How we can control the buttons shown in the `Alert`?
 2). Style various core components,
 3). Styling across iOS and Android
 
+# Section 3 - Styling in React Native
+
 ## Lec 20 - StyleSheet API (5:55)
 
 # StyleSheet API allows us to style components in react native. For Styling there is new project directory being created named `stylingRN`
@@ -390,6 +396,8 @@ Q. How doe we specify multiple styles for a component?
 # In React Native above Main axis and Cross axis concepts are opposite. The Main Axis runs from top to bottom and the cross axis left to right,
 
 # Learning Flexbox - It is much like learning CSS where we need to familiarize ourself with the various Flexbox properties and understand how they function. Once we grasp the concepts of Flexbox, we'll have a solid understanding of how layouts are created in React Native.
+
+# Section 4 - Layouts in React Native
 
 ## Lec 26 - Code Setup (5:21)
 
@@ -560,3 +568,13 @@ Q. How `flexGrow` is differ from `flex` property?
 # Relative layout is recommended when responsiveness and adaptability are crucial for our application as it offers a more maintainable and flexible approach for handling different screen sizes and orientations.
 
 # Absolute Layout is recommended when we need precise control over the position and size of UI components and for building custom animations with fixed coordinates.
+
+## Lec 39 - Dynamic User Interfaces (2:03)
+
+# Section 5 - Dynamic User Interfaces in React Native 
+
+# Currently, all our larning has centered around iPhone 14 and Pixel 4 devices. Our app's users won't all be using identical devices. Device sizes may vary, ranging from more compact phones to larger devices like iPads or Android tablets.
+
+# We must ensure that our app's user interface remains responsive to these different sizes while maintaining an optimal user experience. On the same device, a user might opt for portrait mode, while another prefers landscape orientation.
+
+# Command to create new project - `npx create-expo-app@latest DynamicUI --template blank@sdk-49`
