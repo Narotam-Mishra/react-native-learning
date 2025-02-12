@@ -578,3 +578,15 @@ Q. How `flexGrow` is differ from `flex` property?
 # We must ensure that our app's user interface remains responsive to these different sizes while maintaining an optimal user experience. On the same device, a user might opt for portrait mode, while another prefers landscape orientation.
 
 # Command to create new project - `npx create-expo-app@latest DynamicUI --template blank@sdk-49`
+
+## Lec 40 - Dimensions API (5:41)
+
+# To open the application on iPad , click `shift` + `I` key from terminal of VS Code
+
+# In order to address responsive styles based on device's size we need to use Dimensions API.
+
+# Step 1 - Import `Dimensions` API from `react-native` package
+
+# `Dimensions.get()` :- This method accepts either `screen` or `window` object as an argument where `screen` refers to entire physical display of the device including areas that might be outside the visible viewport due to notches, status bar or system nav bars. On the other hand `window` refers to the visible area of the screen occupied by our App's UI. For the task involving UI elements within our application's visible area we will want to use `window` 
+
+# Summary - `Dimensions` API provides access to the device size, by using the device's width or height we can create responsive styles for our UI elements. 
