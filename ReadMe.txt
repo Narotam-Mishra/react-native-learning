@@ -589,4 +589,17 @@ Q. How `flexGrow` is differ from `flex` property?
 
 # `Dimensions.get()` :- This method accepts either `screen` or `window` object as an argument where `screen` refers to entire physical display of the device including areas that might be outside the visible viewport due to notches, status bar or system nav bars. On the other hand `window` refers to the visible area of the screen occupied by our App's UI. For the task involving UI elements within our application's visible area we will want to use `window` 
 
-# Summary - `Dimensions` API provides access to the device size, by using the device's width or height we can create responsive styles for our UI elements. 
+# Summary - `Dimensions` API provides access to the device size, by using the device's width or height we can create responsive styles for our UI elements.
+
+## Lec 41 - Dimensions API Drawback (7:15)
+
+# Although Dimensions API worked but we do have issues, device's dimensions can change when the screen orientation changes and unfortunately the dimensions API doesn't dynamically update with these changes.
+
+# Drawback of Dimensions API - The values don't dynamically update when the window dimensions change either due to orientation changes or more complex scenarios such as foldable phones 
+
+# Steps to fix above Dimensions API issue :-
+1). Import `useState` & `useEffect` hook from React,
+2). create state variable that will store device Dimensions when the screen loads,
+3). add an effect that listens to changes in the device dimensions and update the dimensions state value,
+4). extract the device's width and height from dimensions's state variable,
+4). add inline styles that dynamically change based on the device dimensions 
