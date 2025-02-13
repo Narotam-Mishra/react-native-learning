@@ -597,9 +597,26 @@ Q. How `flexGrow` is differ from `flex` property?
 
 # Drawback of Dimensions API - The values don't dynamically update when the window dimensions change either due to orientation changes or more complex scenarios such as foldable phones 
 
+# Note - Change orientation from `portrait` to default in `app.json` file,
+
 # Steps to fix above Dimensions API issue :-
 1). Import `useState` & `useEffect` hook from React,
 2). create state variable that will store device Dimensions when the screen loads,
 3). add an effect that listens to changes in the device dimensions and update the dimensions state value,
 4). extract the device's width and height from dimensions's state variable,
 4). add inline styles that dynamically change based on the device dimensions 
+
+## Lec 42 - useWindowDimensions (1:52)
+
+# Simplify styling for Dynamic screens using `useWindowDimensions` hook
+
+# Steps
+1). Eliminate the unnecessary code, i.e removing the imports for `useState` & `useEffect`, import for Dimensions API and entire block of code related to `useState` and `useEffect`,
+2). import `useWindowDimensions` from react-native,
+3). find `windowWidth` & `windowHeight` using `useWindowDimensions` hook as below,
+`
+const windowWidth = useWindowDimensions().width
+const windowHeight = useWindowDimensions().height
+`
+
+# `useWindowDimensions` hook is a recommended approach should be go to approach for responsive styles.
