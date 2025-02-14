@@ -620,3 +620,9 @@ const windowHeight = useWindowDimensions().height
 `
 
 # `useWindowDimensions` hook is a recommended approach should be go to approach for responsive styles.
+
+## Lec 43 - SafeAreaView (4:15)
+
+# We can only only see text content on Android not on iPhone It is because the Text's content is hidden behind the notch. Android is completely fine but the iOS device has a problem, if we add padding from top in the container then we can able to see Text's content on the iPhone as well but this is not correct solution as we are getting nunecessary extra space on Android devices. So we need to figure out what will be the safe area for a given device and render our application only within that `View` and that is exactly what the safe area view component is for. So wrap entire JSX's content into `SafeAreaView` component.
+
+# The purpose of `SafeAreaView` is to render content within the safe area boundaries of a device, it applies padding to reflect the physical limitations of the screen such as rounded corners or camera notches.
