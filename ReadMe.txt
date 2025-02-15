@@ -626,3 +626,24 @@ const windowHeight = useWindowDimensions().height
 # We can only only see text content on Android not on iPhone It is because the Text's content is hidden behind the notch. Android is completely fine but the iOS device has a problem, if we add padding from top in the container then we can able to see Text's content on the iPhone as well but this is not correct solution as we are getting nunecessary extra space on Android devices. So we need to figure out what will be the safe area for a given device and render our application only within that `View` and that is exactly what the safe area view component is for. So wrap entire JSX's content into `SafeAreaView` component.
 
 # The purpose of `SafeAreaView` is to render content within the safe area boundaries of a device, it applies padding to reflect the physical limitations of the screen such as rounded corners or camera notches.
+
+## Lec 44 - Platform Specific Code (8:39)
+
+# When developing a cross-platform app, maximizing code reuse is a priority. There are situations where it becomes necessary to tailor our code to specific platforms. React Native offers two approaches for organising and separating platform-specific code and they are :-
+a). Platform module,
+b). Platform-specific file extensions,
+
+a). Platform module :- One of the module ffrom `react-native` which detects the platform on which the app is running, we can use the detection logic to implement platofrm-specific code. Foe example - We can consider a text's content on iPhone it is appropriately positioned within `SafeAreaView` but on Android it is too close to the status bar (attached to top), if we apply `paddingTop` property, it will be apply to both Android and iPhone which not needed however using `Platform` module from `react-native` we can set a top padding only on Android using below code :-
+==> `paddingTop: Platform.OS === 'android' ? 25 : 0`
+
+# In similar way we can use above code in iOS devices
+
+# While `Platform.OS` is suitable for small changes a better option for more comprehensive platform specific styles is to use `Platform.select`. Let us illustrate this with example where we completely change the text styles for iOS and Android
+
+# The first approach `Platform module` is appropriate when only small parts of a component are platform specific. For more complex platform specific scenarios we should on second approach i.e, `Platform-specific file extensions`
+
+2). Platform-specific file extensions :- In this approach, we split our code into separate files with `.ios` & `.android` extension before file's main extension. So `react-native` detects the extension and loads the relevant platform file when required by other components.
+
+# `react-native` automatically selects the appropriate version of the component based on the executing platform.
+
+# Summary - `react-native` makes it possible to run platform-specific code using the platform module and platform file extensions. We can use `Plateform.OS` or `Plateform.select` for minor style differences. However for more complex components that need distinct appearances or behaviours across the two platforms `.ios` & `.android` file extensions is recommended.
