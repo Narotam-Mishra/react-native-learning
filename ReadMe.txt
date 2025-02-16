@@ -647,3 +647,13 @@ a). Platform module :- One of the module ffrom `react-native` which detects the 
 # `react-native` automatically selects the appropriate version of the component based on the executing platform.
 
 # Summary - `react-native` makes it possible to run platform-specific code using the platform module and platform file extensions. We can use `Plateform.OS` or `Plateform.select` for minor style differences. However for more complex components that need distinct appearances or behaviours across the two platforms `.ios` & `.android` file extensions is recommended.
+
+## Lec 45 - Build a Pokemon Card (1/6) (4:49)
+
+## Section 6 - Pokemon Card Game
+
+# Concepts so far :- Core Components, Custom Components, Styling, Layouts, Responsive styles
+
+# Section 6  - In this section we will put all concepts knowledge into practice by building a list of Pokemon cards in our application.
+
+# Create Pokemon Card Game - `npx create-expo-app@latest pokemonCardGame --template blank@sdk-49`
