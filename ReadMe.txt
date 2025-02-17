@@ -657,3 +657,8 @@ a). Platform module :- One of the module ffrom `react-native` which detects the 
 # Section 6  - In this section we will put all concepts knowledge into practice by building a list of Pokemon cards in our application.
 
 # Create Pokemon Card Game - `npx create-expo-app@latest pokemonCardGame --template blank@sdk-49`
+
+## Lec 46 - Build a Pokemon Card (2/6) (2:28)
+
+# Pokemon card related styles
+
