@@ -677,3 +677,9 @@ a). Platform module :- One of the module ffrom `react-native` which detects the 
 # Styling of remaining pokemon card's content like type, hp, moves & weaknesses 
 
 # Styling of third block `type`
+# Styling of fouth block `moves`
+# Styling of fifth block `weakness`
+
+## Lec 50 - Build a Pokemon Card (6/6) (2:43)
+
+# we will define Pokemon details for three other Pokemon and pass them in as `props` to the Pokemon Card Component
