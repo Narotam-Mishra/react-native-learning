@@ -668,3 +668,7 @@ a). Platform module :- One of the module ffrom `react-native` which detects the 
 
 # Added Pokemon Card's content like name, image, type, hp, moves & weaknesses in five blocks (each block is represented using `View` component)
 
+## Lec 48 - Build a Pokemon Card (4/6) (3:03)
+
+# pokemon card's content styling - it includes styling of block1 items name, hp, & styling of block2 image element
+
