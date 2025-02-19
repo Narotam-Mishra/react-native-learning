@@ -683,3 +683,19 @@ a). Platform module :- One of the module ffrom `react-native` which detects the 
 ## Lec 50 - Build a Pokemon Card (6/6) (2:43)
 
 # we will define Pokemon details for three other Pokemon and pass them in as `props` to the Pokemon Card Component
+
+## Section 7 - Render Lists in React Native
+
+## Lec 51 - Lists (6:09)
+
+# Rendering list is an essential aspect of mobile application development. Whether it's a list of contacts, products, or any other collection of items, lists are a fundamental UI component.
+
+# Create new Project for this section - `npx create-expo-app@latest RNList --template blank@sdk-49`
+
+# We will create a mock data set that represents a list of Pokemon, each Pokemon will have a properties like ID, type, and name and we will create this in `data.json` file which contains list of 100 pokemons.
+
+# Our main task is to render the list of Pokemon in the app component
+
+# In React we used to render list items using `map` method and React native we can use the same `map` method to render the list items.
+
+# Rendering lists using the ScrollView component and the `map` method is not the preferred way.
