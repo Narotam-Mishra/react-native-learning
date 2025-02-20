@@ -721,3 +721,11 @@ Q. On printing `item.id` we can still see 60 to 64 ids in the console but on vie
 # `keyExtractor` prop - this prop is a function that takes an item from data array and returns a unique key for that item. It is used to identify the unique items in the list similar to `key` prop when using the `map` method. By default it returns `item.key` and if that is not present it returns `item.id` and if this `item.id` is also not present then it uses the item index as the key where `index` will be available as second argument to the callback function where the first argument is `item` itself 
 
 # Summary :- ScrollView component renders all its react child components at once and has a performance downside whereas `FlatList` renders items lazily when they are about to appear and removes items that scroll way off the screen to save memory and processing time.
+
+## Lec 53 - Item Separator (1:52)
+
+# We will see some additional `props` that are commonly used used with the `FlatList` component 
+
+# `ItemSeparatorComponent` prop :- this props accepts a react component rendering it between each item in the list but excluding the top and the bottom, it is the perfect prop to replace the bottom margin that we have on the card component, while the existing 16px serves as a useful separator between the Cards it also introduces unnecessary spacing at the bottom of the list. By using `View` component along with style of height with this prop can help.
+
+# Summary - The `ItemSeparatorComponent` prop renders a component between each item in the list excluding top and bottom we can assign any react component or even a function that returns a react component. The function can receive specific props allowing for more intricate styling of the component.
