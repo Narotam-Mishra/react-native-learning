@@ -698,4 +698,26 @@ a). Platform module :- One of the module ffrom `react-native` which detects the 
 
 # In React we used to render list items using `map` method and React native we can use the same `map` method to render the list items.
 
-# Rendering lists using the ScrollView component and the `map` method is not the preferred way.
+# Rendering lists using the ScrollView component and the `map` method is not the preferred way in react native.
+
+## Lec 52 - FlatList (6:58)
+
+# While rendering all list items might not be an issue for small lists but for larger data sets consisting of thousands of items, it can lead to performance problems .
+
+# Inreact native the recommended approach to rendering lists is to use the `FlatList` component which renders only the items currently in view making it highly performant for long lists.
+
+# Steps to use `FlatList`
+1). comment out `ScrollView` component code,
+2). import `FlatList` component from `react-native`,
+3). replace the `map` method code with the `FlatList` component code,
+
+# `FlatList` component required two mandatory props and they are :- 1). `data` - which is used to pass the array of items that we want to render in the list, it is source of information for `FlatList` , 2). `renderItem` - it is a function that returns the `JSX` for rendering each item in the list. This function receives an object as argument which contain the current item and we can define how each item should be rendered, this is same as what we return from the `map` method.
+
+Q. On printing `item.id` we can still see 60 to 64 ids in the console but on viewport we can only see 6-7 list items. How exactly FlatList is working?
+# `FlatList` component ensures it generates a few devices length of content in advance to ensure smooth scrolling but now that the initial number of cards have been rendered if we scroll down a bit we can see the additional ids being logged in the console as they are lazily loaded to ensure smooth scrolling.
+
+# If we want to render the list horizontally we can add the `horizontal` prop to `FlatList` and set it to true.
+
+# `keyExtractor` prop - this prop is a function that takes an item from data array and returns a unique key for that item. It is used to identify the unique items in the list similar to `key` prop when using the `map` method. By default it returns `item.key` and if that is not present it returns `item.id` and if this `item.id` is also not present then it uses the item index as the key where `index` will be available as second argument to the callback function where the first argument is `item` itself 
+
+# Summary :- ScrollView component renders all its react child components at once and has a performance downside whereas `FlatList` renders items lazily when they are about to appear and removes items that scroll way off the screen to save memory and processing time.
