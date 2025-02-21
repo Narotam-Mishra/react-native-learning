@@ -736,4 +736,10 @@ Q. On printing `item.id` we can still see 60 to 64 ids in the console but on vie
 
 # If we assign an empty list to the `data` prop of `FlatList` and use `ListEmptyComponent` prop then its content will be shown on UI.
 
-# `ListEmptyComponent` prop will be useful especially when we fetch data from an API and the data might be empty, so instead of handling the logic ourself we can use this prop to manage empty state efficiently
+# `ListEmptyComponent` prop will be useful especially when we fetch data from an API and the data might be empty, so instead of handling the logic ourself we can use this prop to manage empty state efficiently.
+
+## Lec 55 - List Header and Footer (2:28)
+
+# `ListHeaderComponent` prop :- this allow us to add custom header component to the list items. This accepts react component and renders it at the top of the list. It is perfect for adding title, description or any other content that we want to display above the list items.
+
+# `ListFooterComponent` prop :- this allow us to add custom footer component to the list items. This prop renders the component at the bottom of the list and this can be used for adding foot notes, pagination controls or simply a message indicating the end of the list.

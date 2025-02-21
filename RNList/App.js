@@ -14,8 +14,8 @@ export default function App() {
     <SafeAreaView style={styles.container}>
       <View style={styles.scrollView}>
         <FlatList
-          // data={pokemonList}
-          data = {[]}
+          // data = {[]}
+          data={pokemonList}
           renderItem={({ item }) => {
             // console.log(item.id)
             return (
@@ -29,6 +29,8 @@ export default function App() {
           keyExtractor={(item, index) => item.id.toString()}
           ItemSeparatorComponent={<View style={{ height: 16 }}/>}
           ListEmptyComponent={<Text>No Items found</Text>}
+          ListHeaderComponent={<Text style={styles.headerText}>Pokemon List</Text>}
+          ListFooterComponent={<Text style={styles.footerText}>End of List</Text>}
         />
       </View>
     </SafeAreaView>
@@ -53,5 +55,16 @@ const styles = StyleSheet.create({
   },
   cardText: {
     fontSize: 30,
+  },
+  headerText: {
+    fontSize: 24,
+    fontWeight: "bold",
+    textAlign: "center",
+    marginBottom: 16,
+  },
+  footerText: {
+    fontSize: 22,
+    textAlign: "center",
+    marginTop: 12,
   },
 });
