@@ -729,3 +729,11 @@ Q. On printing `item.id` we can still see 60 to 64 ids in the console but on vie
 # `ItemSeparatorComponent` prop :- this props accepts a react component rendering it between each item in the list but excluding the top and the bottom, it is the perfect prop to replace the bottom margin that we have on the card component, while the existing 16px serves as a useful separator between the Cards it also introduces unnecessary spacing at the bottom of the list. By using `View` component along with style of height with this prop can help.
 
 # Summary - The `ItemSeparatorComponent` prop renders a component between each item in the list excluding top and bottom we can assign any react component or even a function that returns a react component. The function can receive specific props allowing for more intricate styling of the component.
+
+## Lec 54 - List Empty (1:19)
+
+# `ListEmptyComponent` prop :- This prop accepts a react component and render it when the list is empty.
+
+# If we assign an empty list to the `data` prop of `FlatList` and use `ListEmptyComponent` prop then its content will be shown on UI.
+
+# `ListEmptyComponent` prop will be useful especially when we fetch data from an API and the data might be empty, so instead of handling the logic ourself we can use this prop to manage empty state efficiently
