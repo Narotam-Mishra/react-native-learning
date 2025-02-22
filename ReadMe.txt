@@ -766,3 +766,27 @@ Q. On printing `item.id` we can still see 60 to 64 ids in the console but on vie
 # The `SectionList` component accepts many of the same props as `FlatList` along with few additional ones. For example - `ItemSeparatorComponent` prop.
 
 # Apart of above props, `SectionList` component accepts many more props.
+
+## Section 8 - Inputs and Forms
+
+## Lec 57 - Inputs and Forms (2:08)
+
+# Input in RN vs Web
+
+# When we developing UI for web applications we have lots of HTML elements at our disposal to capture user inputs. For example - input fields, text areas, dropdown menus, checkboxes, radio groups and many more. However when it comes to working with React Native our options are more limited. Currently core React Native library only provides two input components i.e, text inpt and switch. Apart from these Expo provides additional components like checkboxes and date pickers through the Expo SDK.
+
+# Forms in RN 
+
+# Reading forms in React native presents another challenge and here we typically focus on four key aspects :-
+1). Managing Form State :- Controlling the dynamic data within our forms,
+2). Handling Form Validation :- Ensuring the integrity and validity of the user's input,
+3). Displaying Validation Messages :- Communicating the results of the validation to the user,
+4). Submitting Form Data :- Sending the collected information where it needs to go.
+
+Althought above steps can be streamlined with libraries like React Hook Form.
+
+# Create new RN project name `RNForms` - `npx create-expo-app@latest RNForms --template blank@sdk-49` 
+
+## Lec 58 - TextInput (5:09)
+
+# 
