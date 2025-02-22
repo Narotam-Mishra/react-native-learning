@@ -743,3 +743,26 @@ Q. On printing `item.id` we can still see 60 to 64 ids in the console but on vie
 # `ListHeaderComponent` prop :- this allow us to add custom header component to the list items. This accepts react component and renders it at the top of the list. It is perfect for adding title, description or any other content that we want to display above the list items.
 
 # `ListFooterComponent` prop :- this allow us to add custom footer component to the list items. This prop renders the component at the bottom of the list and this can be used for adding foot notes, pagination controls or simply a message indicating the end of the list.
+
+## Lec 56 - SectionList (5:57)
+
+# SectionList is a performant component designed for rendering sectioned lists.
+
+# For our example we will render a list of Pokemon categorized by type. There will be section for fire type pokemon, water type and so on.
+
+# Note - It is crucial to name one of property in `grouped-data.json` file as `data` as that is what the `SectionList` component expects. If our API data set for example doesn't have the data property then we have to transform our API's data and other properties can be named anything.
+
+# Steps to use `SectionList` component :-
+1). comment out existing `FlatList` component ,
+2). import `SectionList` component from react-native and grouped json data from `grouped-data.json` file,
+3). invoke the `SectionList` component with grouped data
+
+# `SectionList` component has two mandatory props :- 1). `sections` which is a source of information for SectionList i.e `groupedPokemonList`, 2). `renderItem` :- this prop is a function that returns a JSX for rendering each item in the list. It receives an object containing the current item and we can define how each item should be rendered. `item` in renderItem prop's callback refers to each element in the data array and hence the property being called `data` is vital.
+
+# `renderSectionHeader` prop :- this prop is a function that returns the JSX for rendering each section header in the list. It receives an object (`section`) containing the current section and we can define how each section header should be rendered. `section` refers to the entire object in the JSON array of data file.
+
+# `SectionSeparatorComponent` prop - this prop is specific to `SectionList` component that is used to separate each section.
+
+# The `SectionList` component accepts many of the same props as `FlatList` along with few additional ones. For example - `ItemSeparatorComponent` prop.
+
+# Apart of above props, `SectionList` component accepts many more props.
