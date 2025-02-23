@@ -789,4 +789,12 @@ Althought above steps can be streamlined with libraries like React Hook Form.
 
 ## Lec 58 - TextInput (5:09)
 
-# 
+# `TextInput` component is a fundamental building block for user input in React Native. It allows users to enter text and other data into our app.
+
+# When we render `TextInput` component directly (without any prop) we will not able to see it on UI but it does exist on the screen but the styling is such that we don't really see it. If we try to click some random text then we can able to see those random texts in input box on UI. So we have to add some styles to see it properly on the UI.
+
+# In Android devices, when we click on input box we will able to see the keyboard but for iOS devices we need to press command `shift` + `K` then we can able to see the keyboard on iOS devices as well.
+
+# The input field that we used to enter can be tracked using `useState` hook similar to that of React.
+
+# Summary - `TextInput` component is a tool for inputting text into the react native app via a keyboard. We can import it from `react-native` library and invoke it with `value` and `onChnageText` props to manage its state.
