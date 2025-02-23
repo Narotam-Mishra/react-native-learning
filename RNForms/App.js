@@ -5,7 +5,16 @@ export default function App() {
   const [name, setName] = useState("");
   return (
     <SafeAreaView style={styles.container}>
-      <TextInput style={styles.input} value={name} onChangeText={setName} />
+      <TextInput
+        style={styles.input}
+        value={name}
+        onChangeText={setName}
+        placeholder="John Doe"
+        // secureTextEntry={false}
+        // keyboardType="ascii-capable"
+        autoCorrect={false}
+        autoCapitalize='none'
+      />
       <Text style={styles.text}>Name of stack is: {name}</Text>
     </SafeAreaView>
   );

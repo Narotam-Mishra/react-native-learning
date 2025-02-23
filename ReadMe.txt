@@ -798,3 +798,14 @@ Althought above steps can be streamlined with libraries like React Hook Form.
 # The input field that we used to enter can be tracked using `useState` hook similar to that of React.
 
 # Summary - `TextInput` component is a tool for inputting text into the react native app via a keyboard. We can import it from `react-native` library and invoke it with `value` and `onChnageText` props to manage its state.
+
+## Lec 59 - TextInput Props (3:41)
+
+# Important props of `TextInput` component that allows us to customize the behaviour and appearance of the forms in react native :-
+1). `placeholder` prop :- It provides users with visual clues about the expected input ,
+
+2). `secureTextEntry` prop :- It is a boolean prop that masks the input characters making them appear as asterisks or dots. This ensures that the user's input remains hidden, when dealing with sensitive information like passowrds the `secureTextEntry` prop is crucial,
+
+3). `keyboardType` prop :- This prop allows us to specify the type of the keyboard that appears when the user interacts with the text input. Foe example :- if we have created a phone number field we can set `keyboardType` to `numeric`
+
+# To prevent auto correcttion and auto capitalization of text input we can use `autoCorrect` to false and `autoCapitalize` to none
