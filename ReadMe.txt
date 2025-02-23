@@ -809,3 +809,9 @@ Althought above steps can be streamlined with libraries like React Hook Form.
 3). `keyboardType` prop :- This prop allows us to specify the type of the keyboard that appears when the user interacts with the text input. Foe example :- if we have created a phone number field we can set `keyboardType` to `numeric`
 
 # To prevent auto correcttion and auto capitalization of text input we can use `autoCorrect` to false and `autoCapitalize` to none
+
+## Lec 60 - Multiline TextInput (2:10)
+
+# Unlike the web which has an emnt element for single line input and a textarea eleemnt for multi-line input , in react native the same text input element can be used for both purposes, all we have to do is to include `multiline` prop. To make the multi-line input stand out we need to add some additional styles.
+
+# Note - It is important to note that `multiline` prop aligns the text input to the top on iOS and centers it on Android devices. in order to address this we need to specify `textAlign` to `top`

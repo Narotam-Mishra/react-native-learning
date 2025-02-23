@@ -15,6 +15,7 @@ export default function App() {
         autoCorrect={false}
         autoCapitalize='none'
       />
+      <TextInput style={[styles.input, styles.multilineText]} placeholder="write your message" multiline />
       <Text style={styles.text}>Name of stack is: {name}</Text>
     </SafeAreaView>
   );
@@ -35,5 +36,9 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 30,
     padding: 10,
+  },
+  multilineText: {
+    minHeight: 100,
+    textAlignVertical: 'top'
   }
 });
