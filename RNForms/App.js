@@ -1,8 +1,10 @@
 import { useState } from 'react';
-import { StyleSheet, Text, View, StatusBar, SafeAreaView, TextInput } from 'react-native';
+import { StyleSheet, Text, View, StatusBar, SafeAreaView, TextInput, Switch } from 'react-native';
 
 export default function App() {
   const [name, setName] = useState("");
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
   return (
     <SafeAreaView style={styles.container}>
       <TextInput
@@ -13,10 +15,25 @@ export default function App() {
         // secureTextEntry={false}
         // keyboardType="ascii-capable"
         autoCorrect={false}
-        autoCapitalize='none'
+        autoCapitalize="none"
       />
-      <TextInput style={[styles.input, styles.multilineText]} placeholder="write your message" multiline />
+      <TextInput
+        style={[styles.input, styles.multilineText]}
+        placeholder="write your message"
+        multiline
+      />
       <Text style={styles.text}>Name of stack is: {name}</Text>
+
+      {/* Switch component */}
+      <View style={styles.switchContainer}>
+        <Text style={styles.text}>Dark Mode</Text>
+        <Switch 
+          value={isDarkMode} 
+          onValueChange={() => setIsDarkMode((prevState) => !prevState)} 
+          trackColor={{ false: "#767577", true: "#81b0ff" }}
+          thumbColor="#f4f3f4"
+        />
+      </View>
     </SafeAreaView>
   );
 }
@@ -40,5 +57,11 @@ const styles = StyleSheet.create({
   multilineText: {
     minHeight: 100,
     textAlignVertical: 'top'
+  },
+  switchContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 10,
   }
 });

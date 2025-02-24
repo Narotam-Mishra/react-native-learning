@@ -815,3 +815,11 @@ Althought above steps can be streamlined with libraries like React Hook Form.
 # Unlike the web which has an emnt element for single line input and a textarea eleemnt for multi-line input , in react native the same text input element can be used for both purposes, all we have to do is to include `multiline` prop. To make the multi-line input stand out we need to add some additional styles.
 
 # Note - It is important to note that `multiline` prop aligns the text input to the top on iOS and centers it on Android devices. in order to address this we need to specify `textAlign` to `top`
+
+## Lec 61 - Switch (3:59)
+
+# The `Switch` component serves as a valuable tool for integrating toggles into our app's user interface. It's particularly well-suited for scenarios where we require users to make binary choices, such enabling or disabling specific app features.
+
+# In order to toggle using Switch component we need to mange its state using `useState` and use setter function of `useState` hook with `onValueChange` prop.
+
+# `trackColor` - we can use this prop to track color to set colors for the track in different states. It used to take an object as an argument. 
