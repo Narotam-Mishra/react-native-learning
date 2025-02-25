@@ -823,3 +823,7 @@ Althought above steps can be streamlined with libraries like React Hook Form.
 # In order to toggle using Switch component we need to mange its state using `useState` and use setter function of `useState` hook with `onValueChange` prop.
 
 # `trackColor` - we can use this prop to track color to set colors for the track in different states. It used to take an object as an argument. 
+
+## Login Form (5:01)
+
+# We will build the User Interface for the Login Form
