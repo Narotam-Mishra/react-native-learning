@@ -24,6 +24,15 @@ export default function App() {
     return Object.keys(errors).length === 0;
   }
 
+  const handleSubmit = () => {
+    if(validateForm()){
+      console.log(`Form submitted successfully with Username: ${username} and Password: ${password}`);
+      setUsername("");
+      setPassword("");
+      setErrors({});
+    }
+  }
+
   return (
     <KeyboardAvoidingView
       style={styles.container}
@@ -56,7 +65,7 @@ export default function App() {
         {
           errors.password ? <Text style={styles.errorText}>{errors.password}</Text> : null
         }
-        <Button title="Login" onPress={() => {}} />
+        <Button title="Login" onPress={handleSubmit} />
       </View>
     </KeyboardAvoidingView>
   );
@@ -104,5 +113,5 @@ const styles = StyleSheet.create({
   errorText: {
     color: "red",
     marginBottom: 10,
-  }
+  },
 });
