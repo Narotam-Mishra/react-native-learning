@@ -838,3 +838,7 @@ Q. Does using `KeyboardAvoidingView` component fixed the Keyboard overlays issue
 ==> keyboardVerticalOffset={Platform.OS === 'ios' ? 100 : 0}
 
 # The KeyboardAvoidingView component can be a tricky component in react native which can test our patience.
+
+## Lec 64 - Form Validation (2:57)
+
+# In order to do form validation , first things first, we need a way to display error message to our users 

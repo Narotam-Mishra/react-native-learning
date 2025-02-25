@@ -4,6 +4,25 @@ import { StyleSheet, Text, View, TextInput, Button, Image, KeyboardAvoidingView,
 export default function App() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [errors, setErrors] = useState({});
+
+  // function to validate form inputs
+  const validateForm = () => {
+    let errors = {};
+
+    // username is required
+    if(!username){
+      errors.username = "Username is required";
+    }
+
+    // password is required
+    if(!password){
+      errors.password = "Password is required";
+    }
+
+    setErrors(errors);
+    return Object.keys(errors).length === 0;
+  }
 
   return (
     <KeyboardAvoidingView
@@ -11,7 +30,7 @@ export default function App() {
       behavior="padding"
       keyboardVerticalOffset={Platform.OS === 'ios' ? 100 : 0}
     >
-      <View style={styles.form}>
+      <View style={styles.form}> 
         <Image
           source={require("./assets/adaptive-icon.png")}
           style={styles.image}
@@ -23,6 +42,9 @@ export default function App() {
           value={username}
           onChangeText={setUsername}
         />
+        {
+          errors.username ? <Text style={styles.errorText}>{errors.username}</Text> : null
+        }
         <Text style={styles.label}>Password</Text>
         <TextInput
           style={styles.input}
@@ -31,6 +53,9 @@ export default function App() {
           value={password}
           onChangeText={setPassword}
         />
+        {
+          errors.password ? <Text style={styles.errorText}>{errors.password}</Text> : null
+        }
         <Button title="Login" onPress={() => {}} />
       </View>
     </KeyboardAvoidingView>
@@ -75,5 +100,9 @@ const styles = StyleSheet.create({
     height: 400,
     alignSelf: "center",
     marginBottom: 50,
+  },
+  errorText: {
+    color: "red",
+    marginBottom: 10,
   }
 });
