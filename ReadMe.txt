@@ -846,3 +846,16 @@ Q. Does using `KeyboardAvoidingView` component fixed the Keyboard overlays issue
 ## Lec 65 - Form Submission (2:12)
 
 # In order to test form validattion, we need to do form submission.
+
+## Section 9 - Networking in React Native
+
+## Lec 66 - Networking (3:19)
+
+- Fetching and submitting data to API,
+- Loading states,
+- Error handling,
+- FlatList component to display our data,
+
+# Create New React Native project - `npx create-expo-app@latest RNNetworking --template blank@sdk-49`
+
+# API URL - https://jsonplaceholder.typicode.com/posts
