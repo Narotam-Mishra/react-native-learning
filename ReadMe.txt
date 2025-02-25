@@ -824,6 +824,17 @@ Althought above steps can be streamlined with libraries like React Hook Form.
 
 # `trackColor` - we can use this prop to track color to set colors for the track in different states. It used to take an object as an argument. 
 
-## Login Form (5:01)
+## Lec 62 - Login Form (5:01)
 
 # We will build the User Interface for the Login Form
+
+## Lec 63 - KeyboardAvoidingView (4:08)
+
+# In iOS device, when we tap on Password field and press `shift + K` keys to bring up the keyboard, the keyboard completely overlays the input element that is practically invisible and this is not a great user experience. In order to solve this problem we should prefer using `KeyboardAvoidingView` component. Hence we will replace the  outer most `View` component with `KeyboardAvoidingView` component and on this component we will use `behavior` prop. This ensures that the component increases its padding at the bottom matching the keyboard's height.
+
+Q. Does using `KeyboardAvoidingView` component fixed the Keyboard overlays issue?
+# Not completely, if we increase the height of image , let say to 400 then we will face this issue again. So to fix this issue we will use `KeyboardVerticalOffset` prop with value of 100 will fix the issue but there is a tiny problem with Android now, clicking on passowrd field introduced a unnecessary space by the offset. So to fix this one we need to use `Plateform` specific offset. 
+
+==> keyboardVerticalOffset={Platform.OS === 'ios' ? 100 : 0}
+
+# The KeyboardAvoidingView component can be a tricky component in react native which can test our patience.
