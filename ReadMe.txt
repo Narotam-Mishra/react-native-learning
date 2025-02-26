@@ -862,4 +862,10 @@ Q. Does using `KeyboardAvoidingView` component fixed the Keyboard overlays issue
 
 ## Lec 67 - GET Requests (7:00)
 
-# We will fetch data from API and displays it in React Native component  
+# We will fetch data from API and displays it in React Native component 
+
+## Lec 68 - Loading State (2:47)
+
+# We will implement `loading state` while the data is being fetched in background.
+
+# We will conditionally render a loading spinner by using `ActivityIndicator` component
