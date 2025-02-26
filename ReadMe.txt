@@ -859,3 +859,7 @@ Q. Does using `KeyboardAvoidingView` component fixed the Keyboard overlays issue
 # Create New React Native project - `npx create-expo-app@latest RNNetworking --template blank@sdk-49`
 
 # API URL - https://jsonplaceholder.typicode.com/posts
+
+## Lec 67 - GET Requests (7:00)
+
+# We will fetch data from API and displays it in React Native component  
