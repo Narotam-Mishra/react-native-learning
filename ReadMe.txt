@@ -875,3 +875,22 @@ Q. Does using `KeyboardAvoidingView` component fixed the Keyboard overlays issue
 # we will implement pull to refresh functionality, this feature is particularly useful when we want to refresh the data displayed in our app without having to restart it.
 
 # In order to implement pull to refresh functionality, we will use a useState to manage its state then we set the returned value of this state on `refreshing` prop of `FlatList` component. Apart from this we will also use `onRefresh` prop that which used to take a callback function, so we will pass one similar function, i.e, `onRefresh={handleRefresh}`
+
+## Lec 70 - POST Request (7:22)
+
+# We will make `post` request from our React Native app
+
+# Steps to make `post` request :-
+1). Begin by creating state variables to track the post title and post body
+
+`const [postBody, setPostBody] = useState("");
+const [isPosting, setIsPosting] = useState(false);`
+
+1.1). we use a state variable to monitor the data submission process
+`const [isPosting, setIsPosting] = useState(false);`
+
+2). bind above state varibles to UI element,
+
+3). define handler for button clicks 
+
+# More Info - https://jsonplaceholder.typicode.com/guide/
