@@ -894,3 +894,18 @@ const [isPosting, setIsPosting] = useState(false);`
 3). define handler for button clicks 
 
 # More Info - https://jsonplaceholder.typicode.com/guide/
+
+## Lec 71 - Error Handling (6:32)
+
+# Steps to do Error handling :-
+1). define a state variable to track any errors that might occur 
+==> `const [error, setError] = useState("");`
+
+2). add try-catch blocks to fetchData() method and addPost() functions to handle any errors that might occur during the fetch or post operations,
+
+# Note - localhost URLs do not work from the Android emulator sos we can make API requests to our local endpoints from iOS devices but for Android we need workarounds like using our computer's IP address instead of localhost,
+
+## Debugging Tips for iPhone Simulator :-
+- Pressing command D brings up the Developer's menu, if this shortcut doesn't work then we can open the device menu and choose `shake` option to access the same, here we will focus on two options :-
+1). Show Element Inspector :- it allowed us to inspect elements similar to Browser's inspector,
+2). Open JS Debugger :- it let us inspect Network requests.
