@@ -869,3 +869,9 @@ Q. Does using `KeyboardAvoidingView` component fixed the Keyboard overlays issue
 # We will implement `loading state` while the data is being fetched in background.
 
 # We will conditionally render a loading spinner by using `ActivityIndicator` component
+
+## Lec 69 - Pull to Refresh (3:04)
+
+# we will implement pull to refresh functionality, this feature is particularly useful when we want to refresh the data displayed in our app without having to restart it.
+
+# In order to implement pull to refresh functionality, we will use a useState to manage its state then we set the returned value of this state on `refreshing` prop of `FlatList` component. Apart from this we will also use `onRefresh` prop that which used to take a callback function, so we will pass one similar function, i.e, `onRefresh={handleRefresh}`
