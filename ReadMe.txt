@@ -909,3 +909,37 @@ const [isPosting, setIsPosting] = useState(false);`
 - Pressing command D brings up the Developer's menu, if this shortcut doesn't work then we can open the device menu and choose `shake` option to access the same, here we will focus on two options :-
 1). Show Element Inspector :- it allowed us to inspect elements similar to Browser's inspector,
 2). Open JS Debugger :- it let us inspect Network requests.
+
+# Note - Till above React Native Fundamentals covered
+
+## Section 10 - Advance React Native concepts : Navigation into React Native
+
+## Lec 72 - Navigation (3:08)
+
+# The heart of any mobile application is Navigation
+
+# The mechanism that allows users to move across different screens, access feaatures, and generally use our app effectively. A go-to solution for handling navigation is the React Navigation library. 
+
+# Expo has its own built-in routing feature exclusive to Expo projects
+
+# React Navigation works both with and without Expo in React Native apps. We will focus on React navigation in this section.
+
+# React Navigation :- It provides a variety of navigators like Stack, Drawer and Tab navigators.
+
+# Stack Navigator provides a way for our app to transition between screens where each new screen is placed on top of a stack.
+
+# Drawer Navigator renders a navigation drawer on the side of the screen which can be opened and closed via gestures.
+
+# A Tab navigator at the bottom of our screen lets us easily switch between different routes.
+
+# Create New React Native project :- `npx create-expo-app@latest RNNavigation --template blank@sdk-49`
+
+# In order to work work with React Navigation we need to install its peer dependencies as below :-
+
+==> `npm install react-native-screens react-native-safe-area-context`
+
+# To work with react navigation we need a wrapping component for a whole app and that is a `NavigationContainer` component 
+
+# All the navigation related logic will be written inside `NavigationContainer` component.
+
+# React Navigation Documentation :- https://reactnavigation.org/docs/getting-started
