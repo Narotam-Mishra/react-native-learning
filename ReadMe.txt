@@ -943,3 +943,29 @@ const [isPosting, setIsPosting] = useState(false);`
 # All the navigation related logic will be written inside `NavigationContainer` component.
 
 # React Navigation Documentation :- https://reactnavigation.org/docs/getting-started
+
+## Lec 73 - Stack Navigation (6:36)
+
+# Stack Navigation :- In this navigation, each new screen is stacked on top of the previous one like a deck of cards. When we navigate to a new screen, a new card is placed on top of the stack, and when we navigate back, the top card is removed, revealing the previous screen. 
+
+# This Navigation pattern is common in many mobile apps that allows user to drill down into detailed views and then retrace their steps when done. It's particularly useful in scenarios where a linear flow of screens is required. For Example - List View to Details View to More Details view.
+
+# React Navigation's library offers two Navigators for Stack navigation and they are 1). Stack Navigator and 2). Native Stack Navigator,
+
+1). The Stack Navigator is a javaScript-based navigator which offers a high degree of customization, making it a great choice for apps that require a unique navigation experience. However, this comes at the cost of performance especially when compared to its counterpart, the Native Stack Navigator,
+
+2). The Native Stack navigator leverages the native navigation constructs of iOS and Android, providing better performance and a more native feel to the transitions and gestures. The caveat here is, it might not offer the same level of customization as the Stack Navigator.
+
+# We will mainly focus on the Native Stack Navigator as a high level of customization is not our focus right now. Better performance and a more native feel to the transitions and gestures is preferred.
+
+# Steps to use Native Stack Navigation :-
+1). install the native stack Navigator library in our project using below command 
+
+==> `npm install @react-navigation/native-stack`
+
+2). create `createNativeStackNavigator` instance and setup navigator within App.js, within `NavigationContainer` we will use `Stack.Navigator` component and within this we will use `Stack.Screen` component. The `Stack.Screen` component accepts `name` prop that will be name of screen and the `component` prop which refers to the react native component that will render a `View` 
+
+# Note - Screen's header like `Home`, `About` have platform specific implementation that why we see `Home` at center of screen in iOS and left in Android. The library also takes care of rendering the content within a safe area view avoiding the notch at the top. Bydefault the topmost screen within the Navigator is the initial screen. We can change this by setting the `initialRouteName` prop on `Stack.Navigator` component 
+
+# More Info on Native Stack Navigator :- https://reactnavigation.org/docs/native-stack-navigator
+
