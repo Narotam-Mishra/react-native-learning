@@ -969,3 +969,15 @@ const [isPosting, setIsPosting] = useState(false);`
 
 # More Info on Native Stack Navigator :- https://reactnavigation.org/docs/native-stack-navigator
 
+## Lec 74 - Navigation between Screens (4:19)
+
+Q. How we can navigation between two screen?
+# We have two primary ways to handle navigation between screens 1). using `navigation` prop, 2). using `useNavigation` hook,
+
+1). Navigation using `navigation` prop :- Every screen component in our application is provided with the navigation prop automatically by React's Navigation. This prop has various methods to initiate navigation actions one of which is `navigate`
+
+Q. When to use `navigation` prop and when to use `useNavigation` hook?
+# The `navigation` prop is easy to use and doesn't require any additional import if we're within screen component however `useNavigation` hook can be used in any component not just screen components making it more flexible option when we have nested components or working with utility components that need to initiate navigation. So recommended approach is to use the `navigation` prop for all screen components and use `useNavigation` hook only when it is necessary.
+
+# When we navigate from Home scrren to About screen we can see that React's navigation keeps the Home screen in the stack and adds the About screen on the top of it. If we press the back button (above arrow option `<--`), it pops the above screen of the stack and navigates back to  home screen following LIFO priciple of stack. This stacking behavior ensures a natural navigation flow within our app allowing users to move forward to new screens or step back previous screen easily.
+
