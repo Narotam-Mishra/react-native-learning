@@ -981,3 +981,11 @@ Q. When to use `navigation` prop and when to use `useNavigation` hook?
 
 # When we navigate from Home scrren to About screen we can see that React's navigation keeps the Home screen in the stack and adds the About screen on the top of it. If we press the back button (above arrow option `<--`), it pops the above screen of the stack and navigates back to  home screen following LIFO priciple of stack. This stacking behavior ensures a natural navigation flow within our app allowing users to move forward to new screens or step back previous screen easily.
 
+## Lec 75 - Passing Data between Screens (4:20)
+
+Q. How to pass data while navigating?
+# In order to pass data we will pass a `name` parameter from `home` to `about` and render that `name` value in the `about` screen. The `navigation.navigate()` method accepts a second argument, that is a route parameters object. This object can contain the data we want to pass to the new screen. We can access the pass data `name` on other screen using the `route` prop. This prop is provided to all screen components. 
+
+# It is also possible to set a default parameter value. It is also possible to update the parameters from the given screen using the `navigation` prop. We can also send data back to the previous screen in the same way.
+
+# React Navigation's parameters handling provides a seamless way to pass and retrieve data between screens making our navigation structured and more dynamic and responsive to user interaction
