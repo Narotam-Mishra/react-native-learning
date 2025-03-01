@@ -989,3 +989,21 @@ Q. How to pass data while navigating?
 # It is also possible to set a default parameter value. It is also possible to update the parameters from the given screen using the `navigation` prop. We can also send data back to the previous screen in the same way.
 
 # React Navigation's parameters handling provides a seamless way to pass and retrieve data between screens making our navigation structured and more dynamic and responsive to user interaction
+
+## Lec 76 - Stack Navigation Options (5:02)
+
+# Some of the options that the Stack Navigator supports
+
+# We will specify a screen title, styling headers and setting content styles.
+
+# Every screen in our stack can display a title in the header serving as the handy guide for users to understand their current location within the app. By default the `name` prop on the screen component is showcased as the screen title. For instance on our devices it displays `Home` & `About` however this can be customized by specifying a `title` option using `option` prop.
+
+# It is often desriable to style the header to resonate with the application's theme, this includes setting the background color, text color and font-weight among other attributes 
+
+# `headerRight` prop --> provide option to add element in right side of header,
+
+# `headerLeft` prop --> provide option to add element in left side of header,
+
+# React Native also provides an option to style the content of our screen using the `contentStyle` option 
+
+# It is crucial to note that above options are for screen specific, on navigating to about screen the styles do not follow. For uniform style across all screen in the stack we need to lift these options to the Stack Navigator using `screenOptions` prop. After using this option we can see the same styling to the both screens 
