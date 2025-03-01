@@ -1006,4 +1006,17 @@ Q. How to pass data while navigating?
 
 # React Native also provides an option to style the content of our screen using the `contentStyle` option 
 
-# It is crucial to note that above options are for screen specific, on navigating to about screen the styles do not follow. For uniform style across all screen in the stack we need to lift these options to the Stack Navigator using `screenOptions` prop. After using this option we can see the same styling to the both screens 
+# It is crucial to note that above options are for screen specific, on navigating to about screen the styles do not follow. For uniform style across all screen in the stack we need to lift these options to the Stack Navigator using `screenOptions` prop. After using this option we can see the same styling to the both screens.
+
+## Lec 77 - Dynamic Stack Navigator Options (3:32)
+
+# There are instances where we might want to dynamically set certain options, the `title` being a prime example. Let say instead of generic title like `About` we want to personalize it with the name of of the person passed in as a parameter.
+
+# One way to dynamically set the header title is directly from `Stack.screen` component by passing a function to the options prop. In the context of our `About` screen component we would specify `options` to a function which returns an object and the function receives the `route` prop from the screen which we can destruture to access the desired parameters and use them as part of the title.
+
+# We can also use a react hook to set a dynamic title using `useLayoutEffect` hook. If we replace `useLayoutEffect` hook with `useEffect` the title update might show a noticable delay which is not the smoothest user experience. Hence `useLayoutEffect` hook is the recommended option for tasks.
+
+Q. When to use `Stack.Screen` and `useLayoutEffect` to dynamically set the header title?
+# We should use `Stack.Screen` options when the title or navigation options are driven by route parameters are static. Opt for `useLayoutEffect` hook when the navigation options depend on the screen components internal logic state or props or when they need to be updated post render
+
+# `useLayoutEffect` hook - https://chatgpt.com/share/67c31460-349c-8004-be18-ffc9f7e0575f
