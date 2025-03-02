@@ -1049,3 +1049,9 @@ Q. When to use `Stack.Screen` and `useLayoutEffect` to dynamically set the heade
 7). installation and configuration is completed, now we can create the main component ,
 
 # We can see an icon to toggle the drawer from left. It is also possible to toggle the screen programmatically.
+
+## Lec 79 - Drawer Navigation Options (2:00)
+
+# Drawer navigation options to customize its appearance using `options` prop,
+
+# the title specified in `options` prop will get rendered as the header title as well as the drawer label.
