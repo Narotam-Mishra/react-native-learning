@@ -1071,3 +1071,29 @@ Q. When to use `Stack.Screen` and `useLayoutEffect` to dynamically set the heade
 # Tab Navigator is used to display at the bottom of screen. The Tabs allowed for easy navigation to the respective screens.
 
 # In each Tab, `name` prop on `Tab.Screen` is displayed as the label as well as the title in the header.
+
+## Lec 81 - Tab Navigation Options (4:49)
+
+# options available in Tab Navigation :-
+1). `tabBarLabelPosiiton` prop :- By default it is set to below icon, we can change this to `beside-icon`
+
+`<Tab.Navigator screenOptions={{
+  tabBarLabelPosition: "beside-icon",
+}}>`
+
+# Label will be now to the right of the icon. Typically `below-icon` is set for mobile devices and `beside-icon` for iPad and Tablets. So let us stick with `below-icon` only as of now .
+
+2). `tabBarShowLabel` prop :- by default this prop value is true , if we set it to false then `label name` will not be displayed any more,
+
+3). `tabBarActiveTintColor` prop - it used to display color of active tab bar,
+
+4). `tabBarInactiveTintColor` prop - it used to display color of inactive tab bar and by default it color is grey,
+
+# Tab Screen options :- By default the Tab screen name is rendered as the Tab bar label. 
+
+1).We can change that using `tabBarLabel` prop.
+
+2). We can customize the icons in the tab using `tabBarIcon`. The easiest way to add icons using `expo icons`
+
+3). `tabBarBadge` prop :- This prop is particularly useful if we have notifications tab or an inbox tab that requires the user's attention to items on the screen.
+
