@@ -918,7 +918,7 @@ const [isPosting, setIsPosting] = useState(false);`
 
 # The heart of any mobile application is Navigation
 
-# The mechanism that allows users to move across different screens, access feaatures, and generally use our app effectively. A go-to solution for handling navigation is the React Navigation library. 
+# The mechanism that allows users to move across different screens, access features, and generally use our app effectively. A go-to solution for handling navigation is the React Navigation library. 
 
 # Expo has its own built-in routing feature exclusive to Expo projects
 
@@ -934,7 +934,7 @@ const [isPosting, setIsPosting] = useState(false);`
 
 # Create New React Native project :- `npx create-expo-app@latest RNNavigation --template blank@sdk-49`
 
-# In order to work work with React Navigation we need to install its peer dependencies as below :-
+# In order to work with React Navigation we need to install its peer dependencies as below :-
 
 ==> `npm install react-native-screens react-native-safe-area-context`
 
@@ -979,7 +979,7 @@ Q. How we can navigation between two screen?
 Q. When to use `navigation` prop and when to use `useNavigation` hook?
 # The `navigation` prop is easy to use and doesn't require any additional import if we're within screen component however `useNavigation` hook can be used in any component not just screen components making it more flexible option when we have nested components or working with utility components that need to initiate navigation. So recommended approach is to use the `navigation` prop for all screen components and use `useNavigation` hook only when it is necessary.
 
-# When we navigate from Home scrren to About screen we can see that React's navigation keeps the Home screen in the stack and adds the About screen on the top of it. If we press the back button (above arrow option `<--`), it pops the above screen of the stack and navigates back to  home screen following LIFO priciple of stack. This stacking behavior ensures a natural navigation flow within our app allowing users to move forward to new screens or step back previous screen easily.
+# When we navigate from Home screen to About screen we can see that React's navigation keeps the Home screen in the stack and adds the About screen on the top of it. If we press the back button (above arrow option `<--`), it pops the above screen of the stack and navigates back to  home screen following LIFO priciple of stack. This stacking behavior ensures a natural navigation flow within our app allowing users to move forward to new screens or step back to previous screen easily.
 
 ## Lec 75 - Passing Data between Screens (4:20)
 
@@ -1020,3 +1020,32 @@ Q. When to use `Stack.Screen` and `useLayoutEffect` to dynamically set the heade
 # We should use `Stack.Screen` options when the title or navigation options are driven by route parameters are static. Opt for `useLayoutEffect` hook when the navigation options depend on the screen components internal logic state or props or when they need to be updated post render
 
 # `useLayoutEffect` hook - https://chatgpt.com/share/67c31460-349c-8004-be18-ffc9f7e0575f
+
+## Lec 78 - Drawer Navigation (7:25)
+
+# Drawer Navigator introduces a hidden menu, sliding from either side of the screen. It is particularly beneficial in apps with multiple main sections that requires a neat and organized navigation structure.
+
+# Steps to use :-
+1). install Drawer Navigator package using below command
+==> `npm install @react-navigation/drawer`
+
+2). we need to install and configure the libraries that are required by drawer navigator and they are ` react-native-gesture-handler` and `react-native-reanimated`,
+
+3). rename the `App.js` to `AppStack.js`
+
+4). create new `App.js` file, where we need to import 'react-native-gesture-handler' at the top,
+
+5). create Drawer Navigator instance using `createNativeStackNavigator()` method,
+
+5). Add Reanimated's babel plugin into `babel.config.js` file
+
+==> plugins: [
+      'react-native-reanimated/plugin',
+    ],
+
+6). clear the cache using below command then run the app 
+==> `npx expo start -c`
+
+7). installation and configuration is completed, now we can create the main component ,
+
+# We can see an icon to toggle the drawer from left. It is also possible to toggle the screen programmatically.
