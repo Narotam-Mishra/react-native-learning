@@ -1097,3 +1097,14 @@ Q. When to use `Stack.Screen` and `useLayoutEffect` to dynamically set the heade
 
 3). `tabBarBadge` prop :- This prop is particularly useful if we have notifications tab or an inbox tab that requires the user's attention to items on the screen.
 
+## Lec 82 - Nesting Navigators (3:32)
+
+# Nesting navigators allows us to combine the powers of different types of navigators, creating a seamless and organized user experience. It's like having a main road with smaller branching lanes, each having its own set of rules yet interconnected.
+
+# In example we will nest a Stack navigator within a Tab navigator.
+
+# Once we nest the `AboutStack`, two header will be displayed so to hide the header we will use `headerShown` prop
+
+`<Tab.Screen name='AboutStack ' component={AboutStack}  options={{ headerShown: false }} />`
+
+
