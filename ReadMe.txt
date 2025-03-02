@@ -1055,3 +1055,19 @@ Q. When to use `Stack.Screen` and `useLayoutEffect` to dynamically set the heade
 # Drawer navigation options to customize its appearance using `options` prop,
 
 # the title specified in `options` prop will get rendered as the header title as well as the drawer label.
+
+# `drawerLabel` prop :- this is used to assign the new label to drawer label 
+
+## Lec 80 - Tab Navigation (4:06)
+
+# Tab Navigation :- This offers a way to switch between different screens by tapping on a tab which is usually displayed at the bottom of the screen. It's a common and intuitive pattern found in many apps, providing a seamless, user-friendly experience.
+
+# Steps to use Tab Navigation
+1). install Bottom Tabs Navigation library using below command 
+==> `npm install @react-navigation/bottom-tabs`
+
+2). Rename `App.js` to `AppDrawer.js`
+
+# Tab Navigator is used to display at the bottom of screen. The Tabs allowed for easy navigation to the respective screens.
+
+# In each Tab, `name` prop on `Tab.Screen` is displayed as the label as well as the title in the header.
